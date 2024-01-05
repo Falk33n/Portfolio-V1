@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Tim Falk - Web Developer Portfolio. Explore the journey of a passionate web development student at TUC Yrkeshögskola, Sweden. From HTML, CSS, and JavaScript to ongoing C# learning, dive into projects showcasing skills and dedication. View the portfolio for a glimpse into the world of Tim Falk's web development creations.">
+    <meta name="author" content="Tim Falk">
+    <meta name="keywords" content="software engineer, coding enthusiast, web design, tech portfolio, programming projects, developer showcase, creative coding, problem solver, UI/UX design, responsive web, code craftsmanship, digital solutions, coding languages, tech skills, web technologies, web applications, dynamic websites, portfolio showcase, coding journey, programming languages, tech enthusiast, innovative coding, coding projects, web presence, interactive websites, code portfolio, web developer, HTML, CSS, JavaScript, C#, TUC Yrkeshögskola, Rudbecksgymnasiet, student, front-end, back-end, GitHub, LinkedIn, software development, technology, coding skills, creative websites, Tim Falk, full-stack developer, web programming, technology stack, software craftsmanship, coding education, code architecture, modern web development, programming proficiency, programming enthusiast, web projects, coding versatility, coding excellence, coding for the web, coding challenges, web development insights, web coding wizardry, code ninja, tech explorer, coding magic, digital craftsmanship, coding finesse, technology enthusiast, coding artistry, coding adventures, tech wizard, code poet, software design, coding innovations, web craftsmanship, coding expertise, digital creativity, coding projects gallery, technology explorer, coding journeyman, code alchemist">
+
+    <meta property="og:title" content="Tim Falk - Web Developer Portfolio">
+    <meta property="og:description" content="Explore the web development journey of Tim Falk, a passionate student at TUC Yrkeshögskola, Sweden. From HTML, CSS, and JavaScript to ongoing C# learning, discover the projects and experiences that showcase his skills and dedication.">
+    <meta property="og:image" content="images/me.png">
+    <meta property="og:url" content="https://www.timswebb.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tim Falk - Web Developer Portfolio">
+    <meta name="twitter:description" content="Explore the web development journey of Tim Falk, a passionate student at TUC Yrkeshögskola, Sweden. From HTML, CSS, and JavaScript to ongoing C# learning, discover the projects and experiences that showcase his skills and dedication.">
+    <meta name="twitter:image" content="images/me.png">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="canonical" href="https://www.timswebb.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/tailwind.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+    <title>Tim Falk</title>
+
+</head>
+<body class="bg-loading overflow-y-hidden animate-show-page">
+
+    <section class="flex items-center justify-center h-screen w-full fixed top-0 left-0 z-50 bg-loading animate-remove-loading-container">  
+        <h2 class="sr-only">Loading Animation Section</h2>
+        <span id="loading-logo-label" class="w-44 h-44 absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 cursor-default" title="Loading Logo"></span>
+        <object title="Loading Logo" type="image/svg+xml" data="images/loading.svg" aria-labelledby="loading-logo-label"><p>This animation failed to load.</p></object>
+    </section>
+
+    <nav id="skip-content-button-container" class="absolute z-40 top-16 left-0 w-30rem h-20 -translate-x-80 hidden transition-all duration-300 ease-in-out">  
+        <a id="skip-content-button" class="w-full h-full bg-accent py-6 pr-8 pl-16 rounded-lg font-inter text-2xl text-menu-background relative transition-all duration-300 ease-in-out hover:font-bold hover:pl-24 after:w-0 after:h-px after:content-[''] after:bg-menu-background after:absolute after:bottom-5 after:left-24 after:rounded-lg after:transition-all after:duration-300 after:ease-in-out after:-ml-8 hover:after:-ml-1 hover:after:w-48" href="#about">Skip to Content</a>
+    </nav>
+
+    <nav id="navigation-bar-container" class="w-full flex justify-between items-center h-32 fixed top-0 left-0 pr-12 z-30 bg-transparent backdrop-blur-lg transition-all duration-150 ease-in-out animate-change-navigation-background">
+        
+        <header>
+            <a id="logo-link" class="w-28 h-20 absolute ml-3 -mt-10 rotate-45 z-20 768media:ml-11" title="Logo" href="index.html"></a>
+            <object id="logo" type="image/svg+xml" data="images/logo.svg" class="z-10 absolute top-px -left-8 scale-75 transition-all duration-150 ease-in-out opacity-0 animate-show-navigation-bar-one 768media:px-8 768media:pb-px" aria-labelledby="logo-link"><p>This animation failed to load.</p></object>
+            <object id="logo-background" type="image/svg+xml" data="images/logo-background.svg" class="absolute z-0 top-px -left-8 opacity-0 mb-8 scale-75 transition-all duration-150 ease-in-out animate-show-navigation-bar-two 768media:px-8 768media:pb-px" aria-labelledby="logo-link"><p>This animation failed to load.</p></object>
+        </header>
+
+        <ul id="smaller-navigation-bar" class="flex flex-col items-end justify-center h-full gap-3 mt-7 -mr-2 opacity-0 scale-75 transition-all duration-500 ease-in-out overflow-visible cursor-pointer 768media:hidden">
+            <li id="menu-line-one" class="bg-accent w-14 h-px rounded-3xl transition-all duration-150 ease-in-out"></li>
+            <li id="menu-line-two" class="bg-accent w-12 h-px rounded-3xl transition-all duration-150 ease-in-out"></li>
+            <li id="menu-line-three" class="bg-accent w-10 h-px rounded-3xl"></li>
+        </ul>
+
+        <ul id="bigger-navigation-bar" class="hidden -mb-8 gap-14 pr-36 relative items-center h-32 768media:flex">
+            <li id="bigger-navigation-bar-about" class="mb-60 opacity-0 transition-all duration-500 ease-in-out"><a class="text-text-navigation font-normal text-xl transition-colors duration-300 ease-in-out font-fira hover:text-accent" href="#about"><span class="text-accent">01. </span>About</a></li>
+            <li id="bigger-navigation-bar-experience" class="mb-60 opacity-0 transition-all duration-500 ease-in-out"><a class="text-text-navigation font-normal text-xl transition-colors duration-300 ease-in-out font-fira hover:text-accent" href="#experience"><span class="text-accent">02. </span>Experience</a></li>
+            <li id="bigger-navigation-bar-work" class="mb-60 opacity-0 transition-all duration-500 ease-in-out"><a class="text-text-navigation font-normal text-xl transition-colors duration-300 ease-in-out font-fira hover:text-accent" href="#work"><span class="text-accent">03. </span>Work</a></li>
+            <li id="bigger-navigation-bar-contact" class="mb-60 opacity-0 transition-all duration-500 ease-in-out"><a class="text-text-navigation font-normal text-xl transition-colors duration-300 ease-in-out font-fira hover:text-accent" href="#contact"><span class="text-accent">04. </span>Contact</a></li>
+            <li><a id="resume-button" class="border border-solid border-accent text-accent py-3 px-6 rounded-lg z-10 text-xl bg-background absolute right-6 -top-4 opacity-0 transition-all duration-150 ease-in-out -mt-20 font-fira hover:-translate-x-1.5 hover:-translate-y-1.5" href="images/resume.pdf" target="_blank">Resume</a></li>
+            <li id="resume-button-background" class="-mt-20 opacity-0 absolute right-6 -top-4 bg-accent py-3 px-6 rounded-lg text-xl z-0 cursor-pointer transition-all duration-150 ease-in-out"><a class="text-text-navigation font-normal text-lg transition-colors duration-150 ease-in-out font-fira" href="images/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <nav id="menu" class="fixed right-0 top-0 h-full w-4/6 items-center justify-center bg-menu-background z-20 translate-x-50rem transition-transform duration-300 ease-in-out hidden 768media:hidden">
+        <ul class="flex flex-col gap-12">
+            <li><a class="flex flex-col items-center justify-center h-full text-2xl gap-3 text-text-navigation tracking-small transition-colors duration-300 ease-in-out font-inter hover:text-accent" href="#about"><span class="text-accent font-fira text-xl">01. </span>About</a></li>
+            <li><a class="flex flex-col items-center justify-center h-full text-2xl gap-3 text-text-navigation tracking-small transition-colors duration-300 ease-in-out font-inter hover:text-accent" href="#experience"><span class="text-accent font-fira text-xl">02. </span>Experience</a></li>
+            <li><a class="flex flex-col items-center justify-center h-full text-2xl gap-3 text-text-navigation tracking-small transition-colors duration-300 ease-in-out font-inter hover:text-accent" href="#work"><span class="text-accent font-fira text-xl">03. </span>Work</a></li>
+            <li><a class="flex flex-col items-center justify-center h-full text-2xl gap-3 text-text-navigation tracking-small transition-colors duration-300 ease-in-out font-inter hover:text-accent" href="#contact"><span class="text-accent font-fira text-xl">04. </span>Contact</a></li>
+            <li><a class="flex flex-col items-center justify-center h-full text-2xl gap-3 text-accent py-6 px-20 border border-solid border-accent mt-8 tracking-small rounded-lg transition-colors duration-300 ease-in-out font-inter" href="images/resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="menu-background" class="w-1/3 h-full backdrop-blur-sm fixed left-0 top-0 z-20 hidden translate-x-50rem transition-transform duration-300 ease-in-out">
+        <h2 class="sr-only">Menu Background Section</h2>
+    </section>
+
+    <nav>
+        <ul id="bottom-left-navigation" class="fixed rotate-90 bottom-36 -left-24 hidden flex-row items-center justify-center opacity-0 z-10 transition-all duration-500 ease-in-out 1000media:flex">
+            <li class="w-20 flex flex-col items-center"><a title="GitHub" href="https://github.com/Falk33n" target="_blank"><i class="fab fa-github fa-rotate-270 text-4xl text-text-dark transition-all duration-200 ease-in-out hover:text-accent hover:-translate-x-2 hover:-rotate-90"></i></a></li>
+            <li class="w-20 flex flex-col items-center"><a title="LinkedIn" href="https://www.linkedin.com/in/timfalkwebbdev/" target="_blank"><i class="fab fa-linkedin-in fa-rotate-270 text-4xl text-text-dark transition-all duration-200 ease-in-out hover:text-accent hover:-translate-x-2 hover:-rotate-90"></i></a></li>
+            <li class="w-40 h-px bg-text-dark ml-6"></li>
+        </ul>
+        <ul id="bottom-right-navigation" class="fixed rotate-90 bottom-23rem -right-80 hidden flex-row items-center justify-center gap-12 opacity-0 z-10 transition-all duration-500 ease-in-out 1000media:flex">
+            <li class="w-35rem flex flex-col items-end"><a class="text-xl text-text-dark font-fira transition-all duration-200 ease-in-out hover:text-accent hover:-translate-x-4 hover:tracking-small" href="mailto:tim.falk.webd23jon@edu.tucsweden.se">tim.falk.webd23jon@edu.tucsweden.se</a></li>
+            <li class="w-40 h-px bg-text-dark"></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="flex flex-col justify-center pb-40 px-10 h-screen 480media:px-20 768media:items-center">
+            <h1 class="sr-only">Hero Section</h1>
+            <section class="flex flex-col gap-8 relative 1000media:w-4/5 1400media:w-8/12">
+                <h6 id="hero-welcome" class="text-accent text-2xl [word-spacing:0.3rem] mb-12 opacity-0 font-fira transition-all duration-500 ease-in-out">Hi, my name is</h6>
+                <h2 id="hero-title" class="text-text-bright font-bold font-inter text-5xl/tight opacity-0 transition-all duration-500 ease-in-out 480media:text-7xl/tight 768media:text-8xl/tight">Tim Falk. <span class="text-text-dark block">I build things for the web.</span></h2>
+                <p id="hero-about" class="text-text-dark font-normal font-inter text-2xl/normal transition-all duration-500 ease-in-out mb-12 opacity-0 480media:text-3xl/normal 768media:w-11/12 1000media:w-7/12">I'm a web development student at <a class="text-accent block relative after:w-0 after:h-px after:content-[''] after:absolute after:bg-accent after:bottom-px after:left-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-26rem 768media:inline-block" href="https://www.tucsweden.se/" target="_blank">TUC Yrkeshögskola, Sweden.</a> I love to create exceptional websites. Continue to explore my portfolio to get to know me even better.</p>
+                <a id="hero-button" class="border border-solid border-accent text-accent bg-background p-8 text-2xl absolute -bottom-48 left-0 w-96 z-10 transition-all duration-150 ease-in-out rounded-lg text-center mb-12 opacity-0 font-fira hover:-translate-x-2 hover:-translate-y-2" href="#work">Check out my projects!</a>
+                <a id="hero-button-background" class="border border-solid border-accent text-accent bg-accent p-8 text-2xl absolute -bottom-48 left-0 w-96 z-0 rounded-lg mb-12 opacity-0 transition-all duration-150 ease-in-out" href="#work">Check out my projects!</a>
+            </section>
+        </section>
+
+        <section id="about" class="flex flex-col pt-60 px-10 w-full items-center opacity-0 translate-y-20 transition-all duration-300 ease-in-out 480media:px-20">
+            <h2 class="sr-only">About Heading Section</h2>
+            
+            <section class="flex w-full gap-4 items-center transition-all duration-300 ease-in-out 768media:gap-8 1000media:w-4/5 1400media:w-8/12">
+                <h3 class="text-text-bright font-inter font-bold text-3xl whitespace-nowrap transition-all duration-300 ease-in-out 480media:text-4xl 768media:text-5xl"><span class="text-accent font-fira text-2xl transition-all duration-300 ease-in-out 480media:text-3xl 768media:text-4xl">01. </span>About Me</h3><hr class="bg-text-bright h-px border-none opacity-20 inline w-full transition-all duration-300 ease-in-out 768media:w-80 1000media:w-27rem">
+            </section>
+
+            <section class="pt-20 w-full relative 768media:flex 768media:items-center 768media:relative 768media:pb-40 1000media:w-4/5 1400media:w-8/12">
+                <h2 class="sr-only">About Section</h2>
+                <section class="768media:w-6/12 1400media:w-7/12">
+                    <h2 class="sr-only">About Content Section</h2>
+                    <p class="text-text-dark font-inter pb-6 text-2xl/normal">Hello! My name is Tim Falk and I love to create projects on the internet. My interest in web development started when I studied technology at <a class="text-accent relative block after:w-0 after:h-px after:content-[''] after:absolute after:bg-accent after:-bottom-px after:left-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-22rem" href="https://www.tidaholm.se/barnomsorg--utbildning/rudbecksgymnasiet.html" target="_blank">Rudbecksgymnasiet, Tidaholm</a></p>
+                    <p class="text-text-dark font-inter pb-6 text-2xl/normal">It was there that I read the courses Programming and Web Development 1, and later on in life rekindled when I chose to study at <a class="text-accent relative after:w-0 after:h-px after:content-[''] after:absolute after:bg-accent after:-bottom-1 after:left-0 after:transition-all after:duration-300 after:ease-in-out hover:after:w-56" href="https://www.tucsweden.se/" target="_blank">TUC Yrkeshögskola</a> to finally achieve my dream of becoming a web developer.</p>
+                    <p class="text-text-dark font-inter pb-6 text-2xl/normal">During my studies, I've become well acquainted with <span class="text-accent">HTML, CSS and JavaScript, and also I'm currently learning C#.</span> I also have experience with APIs and Tailwind CSS, which I've learned about in my free time.</p>
+                    <ul class="mt-4 flex font-inter gap-10 text-text-dark text-xl flex-wrap">
+                        <li class="flex gap-6 items-center"><i class="fa-light fa-caret-right text-accent text-lg"></i>HTML</li>
+                        <li class="flex gap-6 items-center"><i class="fa-light fa-caret-right text-accent text-lg"></i>CSS</li>
+                        <li class="flex gap-6 items-center"><i class="fa-light fa-caret-right text-accent text-lg"></i>JavaScript</li>
+                        <li class="flex gap-6 items-center"><i class="fa-light fa-caret-right text-accent text-lg"></i>C#</li>
+                    </ul>
+                </section>
+                <figure class="flex w-full justify-center mt-28 relative 768media:absolute 768media:w-30rem 768media:right-8 768media:my-auto">
+                    <img id="about-image" class="w-60vw max-w-28rem h-32vh max-h-28rem rounded-lg overflow-hidden z-2 transition-all duration-75 ease-in-out shadow-under" src="images/me.png" alt="Picture of a man in a light blue shirt who has brown hair.">
+                    <span id="about-image-cover" class="w-60vw max-w-28rem h-32vh max-h-28rem absolute top-0 left-2/4 -translate-x-2/4 bg-accent opacity-80 rounded-lg z-3 transition-all duration-75 ease-in-out hover:bg-transparent hover:-mt-2 hover:-ml-4"></span>
+                    <span id="about-image-background" class="w-60vw max-w-28rem h-32vh max-h-28rem absolute top-0 left-2/4 -translate-x-2/4 mt-7 ml-7 border border-solid border-accent rounded-lg z-0 transition-all duration-75 ease-in-out"></span>
+                </figure>
+            </section>
+        </section>
+
+        <section id="experience" class="mt-60 flex flex-col px-10 w-full items-center opacity-0 translate-y-50px transition-all duration-300 ease-in-out 768media:px-20">
+            <h2 class="sr-only">Experience Heading Section</h2>
+            
+            <section class="flex w-full gap-4 items-center transition-all duration-300 ease-in-out 1000media:w-4/5 1400media:-mr-16 1400media:w-8/12">
+                <h3 class="text-text-bright font-inter font-bold text-3xl whitespace-nowrap transition-all duration-300 ease-in-out 480media:text-4xl 768media:text-5xl"><span class="text-accent font-fira text-2xl transition-all duration-300 ease-in-out 480media:text-3xl 768media:text-4xl">02. </span>Where I've Worked</h3><hr class="bg-text-bright h-px border-none opacity-20 inline w-full transition-all duration-300 ease-in-out 768media:w-80 1000media:w-27rem 1000media:ml-4">
+            </section>
+
+            <section class="768media:flex 1000media:w-4/5 1400media:w-8/12">
+                <h2 class="sr-only">Experience Content Section</h2>
+                <ul class="flex overflow-x-scroll w-screen px-10 pb-1.5 items-center whitespace-nowrap mt-16 768media:flex-col 768media:items-start 768media:w-5/12 768media:overflow-x-hidden 1400media:-mr-17rem">
+                    <li id="first-job" class="job-active border-b-2 border-solid py-5 px-8 font-inter text-xl tracking-small cursor-pointer transition-all duration-300 ease-in-out hover:text-accent hover:bg-menu-background 768media:border-b-0 768media:border-l-2 768media:px-0 768media:pl-8 768media:w-21rem 768media:text-xl">Kyrkogårdsförvaltningen</li>
+                    <li id="second-job" class="job-not-active border-b-2 border-solid py-5 px-8 font-inter text-xl tracking-small cursor-pointer transition-all duration-300 ease-in-out hover:text-accent hover:bg-menu-background 768media:border-b-0 768media:border-l-2 768media:px-0 768media:pl-8 768media:w-21rem 768media:text-xl">Hagbloms Måleri</li>
+                    <li id="third-job" class="job-not-active border-b-2 border-solid py-5 px-8 font-inter text-xl tracking-small cursor-pointer transition-all duration-300 ease-in-out hover:text-accent hover:bg-menu-background 768media:border-b-0 768media:border-l-2 768media:px-0 768media:pl-8 768media:w-21rem 768media:text-xl">Skaraborgs Assistans</li>
+                    <li id="fourth-job" class="job-not-active border-b-2 border-solid py-5 px-8 font-inter text-xl tracking-small cursor-pointer transition-all duration-300 ease-in-out hover:text-accent hover:bg-menu-background 768media:border-b-0 768media:border-l-2 768media:px-0 768media:pl-8 768media:w-21rem 768media:text-xl">Kyrkogårdsförvaltningen</li>
+                </ul>
+
+                <section id="first-job-container" class="px-14 mt-14 768media:w-7/12 1000media:w-4/5 1400media:w-8/12">
+                    <h4 class="text-text-bright text-2xl/normal font-inter tracking-small font-bold 768media:text-3xl/normal">Cemetery Warden<span class="text-accent"> @ Kyrkogårdsförvaltningen Falköping</span></h4>
+                    <h6 class="text-text-bright text-xl/normal font-fira tracking-small [word-spacing:0.3rem] mt-4 mb-2">Mars - September 2023</h6>
+                    <ul>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Managed gardening responsibilities at St. Olofs Cemetery, collaborating with colleagues to ensure the maintenance of the premises. Executed diverse tasks, including but not limited to lawn mowing, flower planting, garden watering, and participation in funeral proceedings.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Undertook grave-digging responsibilities and aided visitors, addressing their various physical and emotional needs with empathy and professionalism. Acquired a license for operating wheel loaders, facilitating tasks such as the removal of trees, branches, bushes, and the transportation of gravestones.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Deepened appreciation for aesthetics and visuals, fostering a passion for excellence. Experienced in handling sensitive situations, particularly in consoling those grieving. Strengthened interpersonal skills and cultivated resilience, laying a foundation for future career opportunities.</li>
+                    </ul>
+                </section>
+
+                <section id="second-job-container" class="hidden px-14 mt-14 768media:w-7/12 1000media:w-4/5 1400media:w-8/12">
+                    <h4 class="text-text-bright text-2xl/normal font-inter tracking-small font-bold 768media:text-3xl/normal">Painter<span class="text-accent"> @ Hagbloms Måleri Skaraborg</span></h4>
+                    <h6 class="text-text-bright text-xl/normal font-fira tracking-small [word-spacing:0.3rem] mt-4 mb-2">January 2021 - February 2023</h6>
+                    <ul>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Successfully completed painter studies, acquiring comprehensive skills in various painting techniques and craftsmanship. Contributed as a key member of one of Skaraborg County's leading construction companies, specializing in the craft. Executed diverse tasks including wall and ceiling painting, plastering, wallpaper and fabric installation as well as spray-painting.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Operated predominantly on "accord," emphasizing efficiency to maximize earnings while maintaining a commitment to high-quality work. Cultivated strong organizational skills, demonstrating the ability to adhere to structured plans and timelines. Collaborated effectively within a team environment, ensuring successful project outcomes.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Developed proficiency in customer interaction, enhancing communication skills and the ability to bring clients' visions to life. Engaged in the construction of a new residential neighborhood for Götenehus, contributing to the painting of approximately 40 apartments across five distinct buildings.</li>
+                    </ul>
+                </section>
+
+                <section id="third-job-container" class="hidden px-14 mt-14 768media:w-7/12 1000media:w-4/5 1400media:w-8/12">
+                    <h4 class="text-text-bright text-2xl/normal font-inter tracking-small font-bold 768media:text-3xl/normal">Personal Assistant<span class="text-accent"> @ Skaraborgs Assistans Tidaholm</span></h4>
+                    <h6 class="text-text-bright text-xl/normal font-fira tracking-small [word-spacing:0.3rem] mt-4 mb-2">November 2019 - August 2020</h6>
+                    <ul>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Provided dedicated assistance to an individual diagnosed with Duchenne muscular dystrophy, a condition leading to progressive muscle deterioration. Supported the individual in daily activities, encompassing personal hygiene, cleaning, and aiding in both academic and professional pursuits.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Assumed responsibility for meal preparation, fostering a comfortable and supportive environment. Engaged in recreational activities, including games, and offered companionship to address the individual's limitations in self-sufficiency.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Developed a comprehensive understanding of proper caregiving techniques tailored to the unique challenges presented by Duchenne muscular dystrophy. Found intrinsic reward in significantly contributing to the improvement of the individual's quality of life during the duration of employment.</li>
+                    </ul>
+                </section>
+
+                <section id="fourth-job-container" class="hidden px-14 mt-14 768media:w-7/12 1000media:w-4/5 1400media:w-8/12">
+                    <h4 class="text-text-bright text-2xl/normal font-inter tracking-small font-bold 768media:text-3xl/normal">Cemetery Warden<span class="text-accent"> @ Kyrkogårdsförvaltningen Tidaholm</span></h4>
+                    <h6 class="text-text-bright text-xl/normal font-fira tracking-small [word-spacing:0.3rem] mt-4 mb-2">June 2019 - October 2019</h6>
+                    <ul>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Collaborated with colleagues in the maintenance of the North Cemetery in Tidaholm, undertaking various gardening tasks such as lawn mowing, flower planting, and garden watering. Engaged in funeral preparations, handling responsibilities that included heavy tool operation, notably edge cutters.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Assumed a crucial role in providing support and assistance to visitors during times of grief, emphasizing empathy and sensitivity. Acquired proficiency in heavy lifting, utilizing physical strength to accomplish diverse tasks associated with cemetery maintenance.</li>
+                        <li class="text-text-dark font-inter text-2xl/normal pt-6 pl-8"><i class="fa-light fa-caret-right text-accent text-xl/normal -ml-8 pr-6"></i>Developed skills in task completion and time management through assignments delegated by the team leader. Gained valuable insights into the significance of teamwork within a professional environment, recognizing its pivotal role achieving shared objectives.</li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+        <section id="work" class="mt-30rem flex flex-col px-10 w-full items-center opacity-0 translate-y-20 transition-all duration-300 ease-in-out 768media:px-20">
+            <h2 class="sr-only">Work Heading Section</h2>
+            
+            <section class="flex w-full gap-4 items-center transition-all duration-300 ease-in-out 1000media:w-4/5 1400media:w-8/12">
+                <h3 class="text-text-bright font-inter font-bold text-3xl whitespace-nowrap transition-all duration-300 ease-in-out 480media:text-4xl 768media:text-5xl"><span class="text-accent font-fira text-2xl transition-all duration-300 ease-in-out 480media:text-3xl 768media:text-4xl">03. </span>Some things I've built</h3><hr class="bg-text-bright h-px border-none opacity-20 inline w-full transition-all duration-300 ease-in-out 768media:w-80 1000media:w-27rem 1000media:ml-4">
+            </section>
+
+            <section class="work-right-side mt-20 relative opacity-0 translate-y-20 transition-all duration-300 ease-in-out 768media:flex 768media:mb-28 1000media:w-4/5 1400media:w-8/12 1400media:px-2vw">
+                <h2 class="sr-only">First Work Right Side Section</h2>
+                <a class="work-link w-full h-43rem 480media:h-38rem 768media:w-45vw 768media:h-20vh 768media:mt-20 1000media:h-25vh 1000media:mt-0 1400media:h-36rem 1400media:w-60rem" href="projects/inCodenito/Projekt/Kommunsida/index.html" target="_blank">
+                    <figure class="w-full h-43rem 480media:h-38rem 768media:w-45vw 768media:h-20vh 1000media:h-25vh 1400media:h-36rem 1400media:w-60rem">
+                        <img class="work-image w-full h-43rem rounded-lg overflow-hidden opacity-15 transition-all duration-150 ease-in-out 480media:h-38rem 768media:w-45vw 768media:h-20vh 1000media:h-25vh 1400media:h-36rem 1400media:w-60rem" src="images/inCodenito.png" alt="Picture from the inside of the InCodenito Bathouse featuring its swimming facility.">
+                        <span class="work-image-cover w-full h-43rem absolute top-0 left-1/2 -translate-x-1/2 bg-work-cover opacity-80 rounded-lg z-3 transition-all duration-150 ease-in-out 480media:h-38rem 768media:w-45vw 768media:h-20vh 768media:top-0 768media:left-0 768media:translate-x-0 768media:mt-20 768media:bg-accent 768media:opacity-30 1000media:mt-0 1000media:h-25vh 1400media:h-36rem 1400media:ml-2vw 1400media:w-60rem"></span>
+                    </figure>
+                </a>
+                <section class="absolute top-0 left-0 z-10 py-14 px-10 h-43rem w-full 480media:h-38rem 768media:relative 768media:p-0 768media:bottom-initial 768media:left-initial 768media:h-initial 768media:flex 768media:flex-col 768media:items-end 1000media:w-4/5 1400media:w-8/12 1400media:mt-10">
+                    <h6 class="font-fira text-accent text-xl tracking-small transition-all duration-300 ease-in-out">Featured Project</h6>
+                    <a href="projects/inCodenito/Projekt/Kommunsida/index.html" target="_blank"><h4 class="mt-3 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent 480media:text-4xl 768media:text-5xl">InCodenito</h4></a>
+                    <p class="mt-8 font-inter text-text-dark text-2xl/normal transition-all duration-300 ease-in-out 480media:mt-0 480media:absolute 480media:top-1/2 480media:left-0 480media:w-full 480media:px-10 480media:-translate-y-1/2 768media:relative 768media:top-initial 768media:left-initial 768media:px-12 768media:py-10 768media:translate-y-0 768media:bg-menu-background 768media:w-170percentage 768media:shadow-under 768media:rounded-lg 768media:mt-10 1000media:w-185percentage 1400media:w-70rem 1400media:-ml-70rem">A project where I created the bathouse page and also the culture and leisure page for a <span class="text-accent">fictional municipality website.</span> This was for a school project where we learned to code as a team given instructions by a customer.</p>
+                    <ul class="flex gap-10 text-text-bright font-fira text-xl tracking-small absoext-lute mb-14 bottom-14 left-10 768media:relative 768media:mb-0 768media:mt-10 768media:bottom-initial 768media:left-initial 1000media:mt-24 1400media:mt-14">
+                        <li>VS Code</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <ul class="flex gap-10 text-3xl absolute left-10 bottom-14 768media:relative 768media:mt-6 768media:bottom-initial 768media:left-initial">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/inCodenito" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="projects/inCodenito/Projekt/Kommunsida/index.html" target="_blank"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+    
+            <section id="work-left-side" class="mt-20 relative opacity-0 translate-y-20 transition-all duration-300 ease-in-out 768media:flex 768media:flex-row-reverse 768media:mb-28 1000media:w-4/5 1400media:w-8/12 1400media:px-2vw">
+                <h2 class="sr-only">Work Left Side Section</h2>
+                <a class="work-link w-full h-43rem 480media:h-38rem 768media:w-45vw 768media:h-20vh 768media:mt-20 1000media:h-25vh 1000media:mt-0 1400media:h-36rem 1400media:w-60rem" href="projects/memory/index.html" target="_blank">
+                    <figure class="w-full h-43rem 480media:h-38rem 768media:w-45vw 768media:h-20vh 1000media:h-25vh 1400media:h-36rem 1400media:w-60rem">
+                        <img class="work-image w-full h-43rem rounded-lg overflow-hidden opacity-15 transition-all duration-150 ease-in-out 480media:h-38rem 768media:w-45vw 768media:h-20vh 1000media:h-25vh 1400media:h-36rem 1400media:w-60rem" src="images/memory-game.png" alt="Picture of a hockey players memory card game with a timer, counter and reset button.">
+                        <span class="work-image-cover w-full h-43rem absolute top-0 left-1/2 -translate-x-1/2 bg-work-cover opacity-80 rounded-lg z-3 transition-all duration-150 ease-in-out 480media:h-38rem 768media:w-45vw 768media:mt-20 768media:h-20vh 768media:top-0 768media:left-initial 768media:right-0 768media:translate-x-0 768media:bg-accent 768media:opacity-30 1000media:h-25vh 1000media:mt-0 1400media:mr-2vw 1400media:h-36rem 1400media:w-60rem"></span>
+                    </figure>
+                </a>
+                <section class="absolute top-0 left-0 z-10 py-14 px-10 h-43rem w-full 480media:h-38rem 768media:relative 768media:p-0 768media:bottom-initial 768media:left-initial 768media:h-initial 1000media:w-4/5 1400media:w-8/12 1400media:mt-10">
+                    <h6 class="font-fira text-accent text-xl tracking-small transition-all duration-300 ease-in-out">Featured Project</h6>
+                    <a href="projects/memory/index.html" target="_blank"><h4 class="mt-3 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent 480media:text-4xl 768media:text-5xl">Memory Game</h4></a>
+                    <p class="mt-8 font-inter text-text-dark text-2xl/normal transition-all duration-300 ease-in-out 480media:mt-0 480media:absolute 480media:top-1/2 480media:left-0 480media:w-full 480media:px-10 480media:-translate-y-1/2 768media:relative 768media:top-initial 768media:left-initial 768media:px-12 768media:py-10 768media:translate-y-0 768media:bg-menu-background 768media:w-170-percentage 768media:shadow-under 768media:rounded-lg 768media:mt-10 1000media:w-185-percentage 1400media:w-70rem 1400media:-mr-70rem">A project where I created a memory game with all the necessary functions, such as a <span class="text-accent">timer, counter, and a reset button.</span> It was a project for the JavaScript 1 course.</p>
+                    <ul class="flex gap-10 text-text-bright font-fira text-xl tracking-small absolute mb-14 bottom-14 left-10 768media:relative 768media:mb-0 768media:mt-10 768media:bottom-initial 768media:left-initial 1000media:mt-24 1400media:mt-14">
+                        <li>VS Code</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul class="flex gap-10 text-3xl absolute left-10 bottom-14 768media:relative 768media:mt-6 768media:bottom-initial 768media:left-initial">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/memory-game" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="projects/memory/index.html" target="_blank"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="work-right-side mt-20 relative opacity-0 translate-y-20 transition-all duration-300 ease-in-out 768media:flex 768media:mb-28 1000media:w-4/5 1400media:w-8/12 1400media:px-2vw">
+                <h2 class="sr-only">Second Work Right Side Section</h2>
+                <a class="work-link w-full h-43rem 480media:h-38rem 768media:w-45vw 768media:h-20vh 768media:mt-20 1000media:h-25vh 1000media:mt-0 1400media:h-36rem 1400media:w-60rem" href="projects/WWW/index.html" target="_blank">
+                    <figure class="w-full h-43rem 480media:h-38rem 768media:w-45vw 768media:h-20vh 1000media:h-25vh 1400media:h-36rem 1400media:w-60rem">
+                        <img class="work-image w-full h-43rem rounded-lg overflow-hidden opacity-15 transition-all duration-150 ease-in-out 480media:h-38rem 768media:w-45vw 768media:h-20vh 1000media:h-25vh 1400media:h-36rem 1400media:w-60rem" src="images/world-wide-web.png" alt="Picture of a world wide web history websites homepage.">
+                        <span class="work-image-cover w-full h-43rem absolute top-0 left-1/2 -translate-x-1/2 bg-work-cover opacity-80 rounded-lg z-3 transition-all duration-150 ease-in-out 480media:h-38rem 768media:w-45vw 768media:h-20vh 768media:top-0 768media:left-0 768media:translate-x-0 768media:mt-20 768media:bg-accent 768media:opacity-30 1000media:mt-0 1000media:h-25vh 1400media:h-36rem 1400media:ml-2vw 1400media:w-60rem"></span>
+                    </figure>
+                </a>
+                <section class="absolute top-0 left-0 z-10 py-14 px-10 h-43rem w-full 480media:h-38rem 768media:relative 768media:p-0 768media:bottom-initial 768media:left-initial 768media:h-initial 768media:flex 768media:flex-col 768media:items-end 1000media:w-4/5 1400media:w-8/12 1400media:mt-10">
+                    <h6 class="font-fira text-accent text-xl tracking-small transition-all duration-300 ease-in-out">Featured Project</h6>
+                    <a href="projects/WWW/index.html" target="_blank"><h4 class="mt-3 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent 480media:text-4xl 768media:text-5xl">World Wide Web</h4></a>
+                    <p class="mt-8 font-inter text-text-dark text-2xl/normal transition-all duration-300 ease-in-out 480media:mt-0 480media:absolute 480media:top-1/2 480media:left-0 480media:w-full 480media:px-10 480media:-translate-y-1/2 768media:relative 768media:top-initial 768media:left-initial 768media:px-12 768media:py-10 768media:translate-y-0 768media:bg-menu-background 768media:w-170percentage 768media:shadow-under 768media:rounded-lg 768media:mt-10 1000media:w-185percentage 1400media:w-70rem 1400media:-ml-70rem">The first project I ever made, it was for a school project where I was tasked with writing about <span class="text-accent">Internets History, Bill Gates, and about Agile Methodology.</span> For the HTML, CSS and Agile Methodology course.</p>
+                    <ul class="flex gap-10 text-text-bright font-fira text-xl tracking-small absolute mb-14 bottom-14 left-10 768media:relative 768media:mb-0 768media:mt-10 768media:bottom-initial 768media:left-initial 1000media:mt-24 1400media:mt-14">
+                        <li>VS Code</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <ul class="flex gap-10 text-3xl absolute left-10 bottom-14 768media:relative 768media:mt-6 768media:bottom-initial 768media:left-initial">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/internet-history" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="projects/WWW/index.html" target="_blank"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+
+        <section id="work-more" class="mt-52 flex flex-col px-10 w-full items-center opacity-0 translate-y-20 transition-all duration-300 ease-in-out 768media:px-20 1000media:w-4/5 1000media:mt-52 mx-auto 1400media:w-8/12">
+            <h2 class="sr-only">Work More Heading Section</h2>
+
+            <section class="flex flex-col w-full gap-6 items-center transition-all duration-300 ease-in-out">
+                <h4 class="text-text-bright font-inter font-bold text-3xl transition-all duration-300 ease-in-out 480media:text-4xl 768media:text-5xl">Other Noteworthy Projects</h4>
+                <a class="relative after:w-0 after:h-px after:content-[''] after:absolute after:bg-accent after:-bottom-px after:-left-0.5 after:transition-all after:duration-150 after:ease-in-out hover:after:w-60" href="pages/archive.html"><h5 class="text-accent font-fira text-2xl transition-all duration-300 ease-in-out">View the archive</h5></a>
+            </section>
+
+            <section id="work-more-content" class="flex flex-col w-full relative mt-14 gap-6 768media:flex-row 768media:flex-wrap 768media:gap-4">
+                <h2 class="sr-only">Work More Content Section</h2>
+                <section class="work-more-visible bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/Stack-Overflow-Recreate" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="projects/stackOverflowRecreate/index.html" target="_blank"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="projects/stackOverflowRecreate/index.html" target="_blank"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Stack Overflow Recreation</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="projects/stackOverflowRecreate/index.html" target="_blank">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">A project where I put my experience to test and recreated the navbar and footer of Stack Overflow.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>VS Code</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-visible bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/Weather-Forecast" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="projects/weatherForecast/index.html" target="_blank"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="projects/weatherForecast/index.html" target="_blank"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Weather Forecast</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="projects/weatherForecast/index.html" target="_blank">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">A project where I created a Weather Forecast. I did this to get more experienced using APIs.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>API</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-visible bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/Calculator" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <a href="https://github.com/Falk33n/Calculator" target="_blank"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Calculator</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="https://github.com/Falk33n/Calculator" target="_blank">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">A project where I created a calculator to solve mathematical problems. Did this as a school project.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>VS Code</li>
+                            <li>C#</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-visible bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/Grade-Calculator" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <a href="https://github.com/Falk33n/Grade-Calculator" target="_blank"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Grade Calculator</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="https://github.com/Falk33n/Grade-Calculator" target="_blank">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">A small project where I created a C# console program to determine what grade a student should get.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>VS Code</li>
+                            <li>C#</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-visible bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n/Social-Security-Number" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <a href="https://github.com/Falk33n/Social-Security-Number" target="_blank"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Social Security Number</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="https://github.com/Falk33n/Social-Security-Number" target="_blank">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">A project where I created a console program to determine if a social security number is valid or if it is faked.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>VS Code</li>
+                            <li>C#</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-visible bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-hidden hidden bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-hidden hidden bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-hidden hidden bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-hidden hidden bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-hidden hidden bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <section class="work-more-hidden hidden bg-menu-background pt-40 px-10 h-32rem w-full rounded-lg shadow-under-small relative opacity-0 translate-y-10 transition-all duration-150 ease-in-out 768media:mb-2 768media:mx-auto 768media:w-48.5% 1000media:w-32%">
+                    <ul class="work-more-destination flex gap-7 text-3xl absolute top-16 right-10 z-3">
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="#none"><i class="fab fa-github"></i></a></li>
+                        <li><a class="text-text-bright transition-colors duration-300 ease-in-out hover:text-accent" title="Internal Link" href="#none"><i class="fa-light fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                    <a href="#none"><h4 class="work-more-title absolute top-36 left-10 font-inter text-text-bright text-3xl font-bold transition-all duration-300 ease-in-out hover:text-accent">Coming Soon</h4></a>
+                    <a class="work-more-link absolute h-full w-full top-0 left-0 z-2" href="#none">
+                        <ul class="text-5xl text-accent absolute top-12 left-10">
+                            <li><i class="fa-light fa-folder"></i></li>
+                        </ul>
+                        <p class="pt-60 font-inter px-10 text-text-dark text-2xl/normal mb-12 transition-all duration-300 ease-in-out">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vitae et distinctio iste! Voluptates sunt earum rem perferendis.</p>
+                        <ul class="flex gap-10 px-10 text-text-bright font-fira absolute bottom-12 left-0 text-lg tracking-small">
+                            <li>???</li>
+                            <li>???</li>
+                            <li>???</li>
+                        </ul>
+                    </a>
+                </section>
+
+                <span id="work-more-button" class="border border-solid border-accent text-accent bg-background text-xl py-7 flex items-center justify-center w-56 mt-24 mx-auto font-fira rounded-lg relative z-3 cursor-pointer transition-all duration-150 ease-in-out hover:-translate-x-2 hover:-translate-y-2">Show More</span>
+                <span id="work-more-button-background" class="border border-solid border-accent bg-accent text-accent text-xl py-7 flex items-center justify-center w-56 font-fira rounded-lg absolute bottom-0 left-1/2 -translate-x-1/2 cursor-pointer z-0">Show More</span>
+            </section>
+        </section>
+
+        <section id="contact" class="h-screen mx-auto flex flex-col px-10 w-full items-center justify-center opacity-0 translate-y-20 transition-all duration-300 ease-in-out 768media:px-20 1000media:w-4/5 1400media:w-8/12">
+            <h2 class="sr-only">Contact Heading Section</h2>
+            <section class="flex flex-col w-full gap-10px items-center pt-80 transition-all duration-300 ease-in-out">
+                <h5 class="text-accent font-fira text-2xl pb-4 whitespace-nowrap transition-all duration-300 ease-in-out">04. What's next?</h5>
+                <h3 class="text-text-bright font-inter font-bold text-5xl whitespace-nowrap transition-all duration-300 ease-in-out 768media:text-6xl 1000media:text-7xl">Get In Touch</h3>
+            </section>
+            <section class="mt-6 relative flex items-center flex-col gap-6">
+                <h2 class="sr-only">Contact Content Section</h2>
+                <p class="font-inter text-text-dark text-2xl/normal text-center 768media:w-3/5">I'm currently looking for an internship between the dates 22 April to 14 June. If you like what you've seen, or if you have any questions, please feel free to contact me.</p>
+                <a id="contact-button" class="bg-background text-accent font-inter text-xl border border-solid border-accent py-6 px-10 rounded-lg z-3 mt-12 transition-all duration-150 ease-in-out hover:-translate-x-2 hover:-translate-y-2" href="mailto:tim.falk.webd23jon@edu.tucsweden.se">Say Hello</a>
+                <a id="contact-button-background" class="bg-accent text-accent font-inter text-xl border border-solid border-accent py-6 px-10 rounded-lg z-0 absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-150 ease-in-out" href="mailto:tim.falk.webd23jon@edu.tucsweden.se">Say Hello</a>
+            </section>
+        </section>
+    </main>
+
+    <footer id="footer" class="mx-auto flex flex-col px-10 w-full items-center opacity-0 transition-all duration-300 ease-in-out 768media:px-20 1000media:w-4/5 1400media:w-8/12">
+        <nav class="mt-6 relative flex flex-col items-center gap-6">
+            <ul class="flex gap-10 1000media:hidden">
+                <li><a class="text-text-bright text-4xl transition-colors duration-300 ease-in-out hover:text-accent" title="GitHub" href="https://github.com/Falk33n" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="text-text-bright text-4xl transition-colors duration-300 ease-in-out hover:text-accent" title="LinkedIn" href="https://www.linkedin.com/in/timfalkwebbdev/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <a class="text-text-bright font-fira text-xl mt-10 mb-12 transition-colors duration-300 ease-in-out hover:text-accent" href="https://github.com/Falk33n/Portfolio-V1.git" target="_blank">Built by Tim Falk</a>
+        </nav>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/main.js"></script>
+    <noscript>Your browser does not support JavaScript.</noscript>
+</body>
+</html>

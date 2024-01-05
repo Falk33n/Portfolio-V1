@@ -1,0 +1,14 @@
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\bin\Debug\net8.0\Personnummer.exe
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\bin\Debug\net8.0\Personnummer.deps.json
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\bin\Debug\net8.0\Personnummer.runtimeconfig.json
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\bin\Debug\net8.0\Personnummer.dll
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\bin\Debug\net8.0\Personnummer.pdb
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.AssemblyInfoInputs.cache
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.AssemblyInfo.cs
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.csproj.CoreCompileInputs.cache
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.dll
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\refint\Personnummer.dll
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.pdb
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\Personnummer.genruntimeconfig.cache
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Personnummer\obj\Debug\net8.0\ref\Personnummer.dll

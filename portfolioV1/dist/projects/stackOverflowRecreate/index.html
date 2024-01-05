@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" sizes="16x16" href="favIcon/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/footerStyles.css">
+    <link rel="stylesheet" href="css/navHeaderStyles.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/miscStyles.css">
+    <title>Stack Overflow - Where Developers Learn, Share, & Build Careers</title>
+</head>
+
+<body>
+    <header class="navHeaderContainer"> <!-- HEADER/NAVBAR START -->
+        <nav class="navContainer">
+            <ul class="navBarLeft">
+                <li>
+                    <details class="navDropDetails">
+                        <summary class="navDropSummary">
+                            <i class="fas fa-bars navDropOpen"></i>
+                            <i class="fas fa-xmark navDropClose"></i>
+                        </summary>
+                        <ul class="navDrop">
+                            <li><a class="navDropActive" href="">Home</a></li>
+                            <li>
+                                <h6>PUBLIC</h6>
+                            </li>
+                            <li class="navDropLinks"><a href=""><i class="fas fa-earth-americas"></i> Questions</a></li>
+                            <li class="navDropLinksFurther"><a href="">Tags</a></li>
+                            <li class="navDropLinksFurther"><a href="">Users</a></li>
+                            <li class="navDropLinksFurther"><a href="">Companies</a></li>
+                            <li class="navDropHeadings">
+                                <h6>COLLECTIVES</h6>
+                                <details>
+                                    <summary><i class="fas fa-circle-info"></i></summary>
+                                    <ul class="navDropCollectives">
+                                        <li class="navDropCollectivesHeading">
+                                            <p>Collectives™ on Stack Overflow</p>
+                                            <img src="img/imgNav/navDropCollectives.png" alt="Image about Collectives">
+                                        </li>
+                                        <li>
+                                            <p>Find centralized, trusted</p>
+                                            <p>content and collaborate</p> 
+                                            <p>around the technologies</p>
+                                            <p>you use most.</p>
+                                        </li>
+                                        <li><a href="">Learn more about<br>Collectives</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="navDropLinks"><a href=""><i class="fas fa-bahai"></i> Explore Collectives</a></li>
+                            <li class="navDropHeadings">
+                                <h6>LABS</h6>
+                                <details>
+                                    <summary><i class="fas fa-circle-info"></i></summary>
+                                    <ul class="navDropLabs">
+                                        <li><img src="img/imgNav/navDropLabs.png" alt="Image about Labs"></li>
+                                        <li>
+                                            <p>Get early access and see previews of new features.</p>
+                                        </li>
+                                        <li><a href="">Learn more about Labs</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li class="navDropLinks"><a href=""><i class="fas fa-message"></i> Discussions <i class="fas fa-square-arrow-up-right"></i></a></li>
+                            <li>
+                                <h6>TEAMS</h6>
+                            </li>
+                            <li class="navDropP">
+                                <p><b>Stack Overflow for Teams –</b></p>
+                                <p class="navDropPColor">Start collaborating and sharing</p>
+                                <p class="navDropPColor">organizational knowledge.</p>
+                            </li>
+                            <li>
+                                <figure>
+                                    <img src="img/imgNav/navDropTeams.png" alt="Image about Teams">
+                                </figure>
+                            </li>
+                            <li class="navDropCreate"><a href="">Create a free Team</a></li>
+                            <li class="navDropWhy"><a href="">Why Teams?</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="navBarLogo"><a href="index.html"><img src="img/imgNav/navBarLogo.png" alt="Logotype"></a></li>
+                <li class="navBarLogoBig"><a href="index.html"><img src="img/imgNav/navBarLogoBig.png" alt="Logotype"></a></li>
+                <li class="navBarLinks"><a href="">About</a></li>
+                <li>
+                    <details class="navBarProductsDetails">
+                        <summary class="navBarProducts">Products</summary>
+                        <ul class="navBarProductsDrop">
+                            <li><a href="">Stack Overflow 
+                                    <span>Public questions & answers</span></a></li>
+                            <li><a href="">Stack Overflow for Teams 
+                                    <span>Where developers & technologists share private knowledge with coworkers</span></a></li>
+                            <li><a href="">Talent 
+                                    <span>Build your employer brand</span></a></li>
+                            <li><a href="">Advertising 
+                                    <span>Reach developers & technologists worldwide</span></a></li>
+                        </ul>
+                        <ul class="navBarProductsLabs">
+                            <li><a href="">Labs 
+                                    <span>The future of collective knowledge sharing</span></a></li>
+                        </ul>
+                        <ul class="navBarProductsAbout">
+                            <li><a href="">About the company</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="navBarLinks"><a href="">For Teams</a></li>
+            </ul>
+            <ul class="navBarRight">
+                <li>
+                    <details class="navSearchSmall">
+                        <summary class="navSearchSummary"><i class="fas fa-search"></i></summary>
+                        <ul class="navSearchDrop">
+                            <li>
+                                <form class="navSearchBar" action="#">
+                                    <button type="submit"><i class="fas fa-search"></i></button>
+                                    <input type="text" placeholder="Search...">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul class="navSearchSuggestions">
+                            <li><b>[tag] </b>search within a tag</li>
+                            <li><b>user:1234 </b>search by author</li>
+                            <li><b>"words here" </b>exact phrase</li>
+                            <li><b>collective:"Name" </b>collective content</li>
+                            <li><b>answers:0 </b>unanswered questions</li>
+                            <li><b>score:3 </b>posts with a 3+ score</li>
+                            <li><b>is:question </b>type of post</li>
+                            <li><b>isaccepted:yes </b>search within status</li>
+                        </ul>
+                        <ul class="navSearchButtons">
+                            <li><a class="navSearchQuestions" href="">Ask a question</a></li>
+                            <li><a class="navSearchHelp" href="">Search help</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="navSearchContainer">
+                    <form class="navSearchBar" action="#">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                        <input type="text" placeholder="Search...">
+                        <ul class="navSearchSuggestionsBig">
+                            <li><b>[tag] </b>search within a tag</li>
+                            <li><b>answers:0 </b>unanswered questions</li>
+                            <li><b>user:1234 </b>search by author</li>
+                            <li><b>score:3 </b>posts with a 3+ score</li>
+                            <li><b>"words here" </b>exact phrase</li>
+                            <li><b>is:question </b>type of post</li>
+                            <li><b>collective:"Name" </b>collective content</li>
+                            <li><b>isaccepted:yes </b>search within status</li> 
+                        </ul>  
+                        <ul class="navSearchButtonsBig">
+                            <li><a class="navSearchQuestionsBig" href="">Ask a question</a></li>
+                            <li><a class="navSearchHelpBig" href="">Search help</a></li>
+                        </ul>
+                    </form>
+                </li>
+                <li class="navLogIn"><a href="">Log in</a></li>
+                <li class="navSignUp"><a href="">Sign up</a></li>
+            </ul>
+        </nav>
+    </header> <!-- HEADER/NAVBAR END-->
+
+    <footer class="footerContainerBig">
+        <nav class="footerContainer">
+            <figure>
+                <img class="footerLogo" src="img/imgFooter/navBarFooter.png" alt="Logotype">
+            </figure>
+
+            <h2><a href="">STACK OVERFLOW</a></h2>
+            <ul>
+                <li class="footerHeadingBig"><a href=""><span>STACK OVERFLOW</span></a></li>
+                <li><a href="">Questions</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
+
+            <h2><a href="">PRODUCTS</a></h2>
+            <ul>
+                <li class="footerHeadingBig"><a href=""><span>PRODUCTS</span></a></li>
+                <li><a href="">Teams</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Collectives</a></li>
+                <li><a href="">Talent</a></li>
+            </ul>
+
+            <h2><a href="">COMPANY</a></h2>
+            <ul>
+                <li class="footerHeadingBig"><a href=""><span>COMPANY</span></a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Work Here</a></li>
+                <li><a href="">Legal</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms of Service</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Cookie Settings</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+
+            <h2><a href="">STACK EXCHANGE NETWORK</a></h2>
+            <ul>
+                <li class="footerHeadingBig"><a href=""><span>STACK EXCHANGE NETWORK</span></a></li>
+                <li><a href="">Technology</a></li>
+                <li><a href="">Culture & recreation</a></li>
+                <li><a href="">Life & arts</a></li>
+                <li><a href="">Science</a></li>
+                <li><a href="">Professional</a></li>
+                <li><a href="">Business</a></li>
+                <li class="footerDividerBig"><a href="">API</a></li>
+                <li><a href="">Data</a></li>
+            </ul>
+
+            <ul class="footerSocial">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+
+            <ul class="footerRights">
+                <li>Site design / logo © 2023 Stack Exchange Inc; user contributions licensed under <u>CC BY-SA</u>.
+                    rev 2023.10.24.43690</li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

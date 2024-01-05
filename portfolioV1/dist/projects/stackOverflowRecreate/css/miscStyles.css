@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+  }
+
+.mainContainer {
+    padding-top: 54px;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.mainBoxesDarkBlue {
+    display: none;
+}
+
+.mainBoxesBlue {
+    display: none;
+}

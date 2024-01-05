@@ -1,0 +1,14 @@
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.AssemblyInfoInputs.cache
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.AssemblyInfo.cs
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.csproj.CoreCompileInputs.cache
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\bin\Debug\net8.0\CalculatorTimFalk.exe
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\bin\Debug\net8.0\CalculatorTimFalk.deps.json
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\bin\Debug\net8.0\CalculatorTimFalk.runtimeconfig.json
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\bin\Debug\net8.0\CalculatorTimFalk.dll
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\bin\Debug\net8.0\CalculatorTimFalk.pdb
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.dll
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\refint\CalculatorTimFalk.dll
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.pdb
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\CalculatorTimFalk.genruntimeconfig.cache
+C:\Users\tiiim\OneDrive\Skrivbord\Mapp\Kurser\Grundläggande Programmering\Miniräknare_Tim_Falk\CalculatorTimFalk\obj\Debug\net8.0\ref\CalculatorTimFalk.dll

@@ -1,0 +1,1011 @@
+/* MEDIA QUERIES CHANGES THE STYLE OF ELEMENTS DEPENDING ON, IN THIS CASE, THE WIDTH OF THE USERS SCREEN */
+
+/* THE ONLY TAG IS USED TO PREVENT OLDER BROWSER THAT DOES NOT SUPPORT MEDIA QUERIES WITH MEDIA FEAUTRES FROM APPLYING THE SPECIIFIED STYLES
+THE SCREEN TAG IS INTENDED FOR COLOR SCREENS OR DEVICES THAT SUPPORT A "SCREEN" MODE 
+THE MIN AND MAX WIDTH TAGS IS SELF EXPLANATORY */
+
+
+
+/* FOR PHONES, FOR THE HEADER AND THE PARAGRAPH INSIDE THAT IS ON THE TOP OF THE PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+header, header p    
+        {
+            font-size: 3.3vw;               /* <--- CHANGES THE FONT SIZE */
+            line-height: 1.6vh;             /* <--- ADDS A SPACE BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE HEADER AND THE PARAGRAPH INSIDE THAT IS ON THE TOP OF THE PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+header, header p    
+        {
+            font-size: 1.6vw;               /* <--- CHANGES THE FONT SIZE */
+            line-height: 1.7vh;             /* <--- ADDS A SPACE BETWEEN EVERY LINE BREAK */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE HEADER AND THE PARAGRAPH INSIDE THAT IS ON THE TOP OF THE PAGE */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+header, header p  
+        {
+            font-size: 1vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 2vh;               /* <--- ADDS A SPACE BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LIST OF LINKS IN NAV MENU */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.nav-menu li 
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+            width: 18.5vw;                  /* <--- CHANGES THE WIDTH */
+            white-space: nowrap;            /* <--- MAKES THE WHITE SPACE NOT WRAP TEXT */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LIST OF LINKS IN NAV MENU */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.nav-menu li    
+        {
+            font-size: 1.6vw;               /* <--- CHANGES THE FONT SIZE */
+            width: 17vw;                    /* <--- CHANGES THE WIDTH */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LIST OF LINKS IN NAV MENU */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.nav-menu li  
+        {
+            font-size: 1vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE NAV BAR JUST UNDER THE NAV MENU  */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.nav-functions 
+        {
+            justify-content: center;        /* <--- MAKES THE ITEMS IN THE FLEX CENTER HORIZONTALLY */
+        }
+        }
+        
+
+
+/* FOR PHONES, FOR EVERY IMAGE INSIDE THE NAV BAR */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.nav-functions img
+        {
+            width: 6vw;                     /* <--- CHANGES THE WIDTH */
+            margin: 0.5vh 0 0.5vh 4vw;      /* <--- REMOVES RIGHT MARGIN, CHANGES MARGIN TO REST */
+        }
+        } 
+
+/* FOR TABLETS, FOR EVERY IMAGE INSIDE THE NAV BAR */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.nav-functions img
+        {
+            width: 6vw;                     /* <--- CHANGES THE WIDTH */
+            margin: 0.5vh 0 0.5vh 4vw;      /* <--- REMOVES RIGHT MARGIN, CHANGES MARGIN TO REST */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE SEARCH ICON INSIDE SEARCHBAR */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.search-bar-icon-search
+        {
+            height: 2.7vh;                   /* <--- CHANGES THE HIGHT */
+            font-size: 1.2vw;                /* <--- CHANGES THE SIZE OF THE ICON */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE SEARCH ICON INSIDE SEARCHBAR */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.search-bar-icon-search
+        {
+            height: 2.75vh;                  /* <--- CHANGES THE HEIGHT */
+            font-size: 1.3vw;                /* <--- CHANGES THE SIZE OF THE ICON */
+            padding-right: 1vw;              /* <--- ADDS PADDING TO THE RIGHT */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE INPUT FIELD OF THE SEARCHBAR  */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.search-bar input[type=text]
+        {
+            height: 2.5vh;                   /* <--- CHANGES THE HEIGHT */
+            font-size: 1.6vw;                /* <--- CHANGES THE FONT SIZE */
+            padding-left: 1vw;               /* <--- ADDS PADDING TO THE LEFT */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE INPUT FIELD OF THE SEARCHBAR  */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.search-bar input[type=text]
+        {
+            height: 2.5vh;                   /* <--- CHANGES THE HEIGHT */
+            font-size: 1.2vw;                /* <--- CHANGES THE FONT SIZE */
+            padding-left: 0.7vw;             /* <--- ADDS PADDING TO THE LEFT */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE QUOTE, QUOTE AUTHOR, SIGN UP AND LOG IN BUTTON INSIDE NAV BAR */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.quote, .quote-author, .sign-up-log-in
+        {
+            display: none;                   /* <--- MAKES THE ELEMENTS NOT VISIBLE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE QUOTE, QUOTE AUTHOR INSIDE NAV BAR */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.quote, .quote-author 
+        {
+            display: none;                   /* <--- MAKES THE ELEMENTS NOT VISIBLE */
+        }
+        } 
+
+
+    
+/* FOR TABLETS, FOR THE SIGN UP AND LOG IN BUTTON */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.sign-up-log-in
+        {
+            margin-right: 4vw;               /* <--- ADDS MARGIN TO THE RIGHT */
+        }
+        }
+
+        
+
+/* FOR TABLETS, FOR THE SIGN UP AND LOG IN BUTTON */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.sign-up-button, .log-in-button
+        {
+            width: 10vw;                     /* <--- CHANGES THE WIDTH */
+            height: 2.5vh;                   /* <--- CHANGES THE HEIGHT */
+            font-size: 1.3vw;                /* <--- CHANGES THE FONT SIZE */
+            padding: 1vh 1.3vw 1vh 1.3vw;    /* <--- ADDS PADDING */
+            line-height: 0vh;                /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+
+
+/* FOR TABLETS, FOR THE / BETWEEN THE SIGN UP AND LOG IN BUTTONS */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.slash
+        {
+            font-size: 0.9vw;               /* <--- CHANGES THE FONT SIZE */
+            line-height: 1vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE SIDE MENU */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.side-menu
+        {
+            display: none;                  /* <--- MAKES THE ELEMENTS NOT VISIBLE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE SIDE MENU */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.side-menu    
+        {
+            display: none;                  /* <--- MAKES THE ELEMENTS NOT VISIBLE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE CONTENT INSIDE THE MAIN CONTAINER */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.main-content    
+        {
+            margin: 13vh 0 0 0;              /* <--- REMOVES MARGIN, CHANGES TOP MARGIN */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE CONTENT INSIDE THE MAIN CONTAINER */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.main-content   
+        {
+            margin: 14vh 0 0 0;              /* <--- REMOVES MARGIN, CHANGES TOP MARGIN */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE CONTENT INSIDE THE MAIN CONTAINER */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.main-content    
+        {
+            margin: 15vh 0 0 15vw;           /* <--- REMOVES MARGIN, CHANGES TOP AND LEFT MARGIN */
+        }
+        } 
+
+
+
+/* FOR TABLETS, FOR THE SECTION IN THE INDEX PAGE */
+@media only screen 
+and (min-width: 870px) 
+and (max-width: 1369px) 
+        {
+#section-background   
+        {
+            margin-top: 16vh;                   /* <--- ADDS MARGIN PUSHING FROM THE TOP */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LARGE HEADING INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.main-h2    
+        {
+            font-size: 4vw;                 /* <--- CHANGES THE FONT SIZE */
+            margin: 1vh 0 0 7vw;            /* <--- REMOVES MARGIN, CHANGES TOP AND LEFT MARGIN */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LARGE HEADING INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 869px) 
+        {
+.main-h2   
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+            margin: 2vh 0 2vh 7vw;          /* <--- REMOVES RIGHT MARGIN, CHANGES REST OF MARGIN */
+        }
+        }
+
+/* FOR TABLETS, FOR THE LARGE HEADING INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 870px) 
+and (max-width: 1250px) 
+        {
+.main-h2   
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+            margin: 4.5vh 0 2vh 7vw;        /* <--- REMOVES RIGHT MARGIN, CHANGES REST OF MARGIN */
+        }
+        }
+
+/* FOR TABLETS, FOR THE LARGE HEADING INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 1251px) 
+and (max-width: 1369px) 
+        {
+.main-h2   
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+            margin: 6vh 0 2vh 7vw;          /* <--- REMOVES RIGHT MARGIN, CHANGES REST OF MARGIN */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE PARAGRAPH TEXT INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.main-p    
+        {
+            font-size: 3vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 4vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE PARAGRAPH TEXT INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.main-p   
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 4.5vh;             /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+            margin-bottom: 3vh;             /* <--- CHANGES BOTTOM MARGIN */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE PARAGRAPH TEXT INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.main-p    
+        {
+            font-size: 1vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 3.3vh;             /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE SMALLER HEADING INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.main-h3    
+        {
+            font-size: 3.3vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE SMALLER HEADING INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.main-h3   
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE IMAGE CONTAINERS AND THE TEXT FOR THE IMAGES INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.main-img, .main-figcaption  
+        {
+            display: none;                  /* <--- MAKES THE ELEMENTS NOT VISIBLE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE IMAGE CONTAINERS AND THE TEXT FOR THE IMAGES INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.main-img, .main-figcaption   
+        {
+            display: none;                  /* <--- MAKES THE ELEMENTS NOT VISIBLE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE VIDEO INSIDE THE MAIN CONTENT IN THE AGILE METHODOLOGY PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+iframe
+        {
+            width: 70vw;                    /* <--- CHANGES THE WIDTH */
+            height: 40vh;                   /* <--- CHANGES THE HEIGHT */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE VIDEO INSIDE THE MAIN CONTENT IN THE AGILE METHODOLOGY PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+iframe    
+        {
+            width: 70vw;                    /* <--- CHANGES THE WIDTH */         
+            height: 55vh;                   /* <--- CHANGES THE HEIGHT */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LABELS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#become-a-member label   
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LABELS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#become-a-member label    
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE INPUT FIELDS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+input[id=e-mail], input[id=password], input[id=password-repeat]    
+        {
+            width: 65vw;                    /* <--- CHANGES THE WIDTH */
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE INPUT FIELDS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+input[id=e-mail], input[id=password], input[id=password-repeat]    
+        {
+            width: 65vw;                    /* <--- CHANGES THE WIDTH */
+            font-size: 1.4vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        }
+        
+        
+
+/* FOR PHONES, FOR THE REGISTER BUTTON IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#register-button   
+        {
+
+            font-size: 2.2vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE REGISTER BUTTON IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#register-button    
+        {
+            font-size: 1.7vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LISTS INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.main-ul    
+        {
+            font-size: 3vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 4vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LISTS INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.main-ul   
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 4.5vh;             /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+            margin-bottom: 3vh;             /* <--- CHANGES THE BOTTOM MARGIN */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LISTS INSIDE THE MAIN CONTENT */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.main-ul    
+        {   
+            font-size: 1vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 3.3vh;             /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        }
+        
+        
+
+/* FOR PHONES, FOR THE SOURCES CONTAINER AT THE BOTTOM OF THE MAIN CONTENT */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.sources    
+        {
+            font-size: 3vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE SOURCES CONTAINER AT THE BOTTOM OF THE MAIN CONTENT */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.sources   
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+            white-space: wrap;              /* <--- MAKES THE WHITE SPACE WRAP WORDS */
+            line-break: auto;               /* <--- CHANGES THE LINE BREAK TO HAPPEN AUTOMATIC */
+            margin-bottom: 3vh;             /* <--- CHANGES BOTTOM MARGIN */
+            width: 70vw;                    /* <--- CHANGES THE WIDTH */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE SOURCES CONTAINER AT THE BOTTOM OF THE MAIN CONTENT */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.sources    
+        {
+            font-size: 1vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LIST ITEMS IN SOURCES CONTAINER */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.sources li   
+        {
+            line-height: 4vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LIST ITEMS IN SOURCES CONTAINER */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.sources li  
+        {
+            line-height: 4vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE FOOTER CONTAINER AND THE LOGO CONTAINER IN THE FOOTER AT THE BOTTOM OF THE WEBSITE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.footer, .footer-logo   
+        {
+            margin: 0;                      /* <--- REMOVES MARGIN */
+        }
+        }  
+
+/* FOR TABLETS, FOR THE FOOTER CONTAINER AND THE LOGO CONTAINER IN THE FOOTER AT THE BOTTOM OF THE WEBSITE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.footer, .footer-logo   
+        {
+            margin: 0;                      /* <--- REMOVES MARGIN */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LARGE HEADINGS IN THE FOOTER */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.footer-h2    
+        {
+            font-size: 5vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LARGE HEADINGS IN THE FOOTER */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.footer-h2   
+        {
+            font-size: 3vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LARGE HEADINGS IN THE FOOTER */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.footer-h2  
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.contact-h3    
+        {
+            font-size: 3.7vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.contact-h3   
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.contact-h3  
+        {
+            font-size: 1.2vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LIST ITEMS, FOR THE TEXT INSIDE THE ADDRESS LIST IN, AND FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.footer li, .contact-text li, .contact-hours li  
+        {
+            font-size: 2.8vw;               /* <--- CHANGES THE FONT SIZE */
+            line-height: 2.5vh;             /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LIST ITEMS, FOR THE TEXT INSIDE THE ADDRESS LIST IN, AND FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.footer li, .contact-text li, .contact-hours li  
+        {
+            font-size: 1.7vw;               /* <--- CHANGES THE FONT SIZE */
+            line-height: 4vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LIST ITEMS, FOR THE TEXT INSIDE THE ADDRESS LIST IN, AND FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.footer li .contact-text li, .contact-hours li 
+        {
+            font-size: 1vw;                /* <--- CHANGES THE FONT SIZE */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE LOGO IMAGE IN THE FOOTER */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.footer-logo img
+        {
+            width: 8vw;                      /* <--- CHANGES THE WIDTH OF THE IMAGE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LOGO IMAGE IN THE FOOTER */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.footer-logo img
+        {
+            width: 7vw;                      /* <--- CHANGES THE WIDTH OF THE IMAGE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LOGO IMAGE TEXT IN THE FOOTER  */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+.footer-logo figcaption 
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LOGO IMAGE TEXT IN THE FOOTER  */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+.footer-logo figcaption
+        {
+            font-size: 1.5vw;               /* <--- CHANGES THE FONT SIZE */      
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LOGO IMAGE TEXT IN THE FOOTER  */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+.footer-logo figcaption
+        {
+            font-size: 1vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE LARGE HEADINGS IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#home-footer-h2    
+        {
+            font-size: 5vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LARGE HEADINGS IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#home-footer-h2   
+        {
+            font-size: 4.5vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LARGE HEADINGS IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+#home-footer-h2  
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#home-contact-h3    
+        {
+            font-size: 4vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#home-contact-h3   
+        {
+            font-size: 3vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+#home-contact-h3  
+        {
+            font-size: 2vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LIST ITEMS, FOR THE TEXT INSIDE THE ADDRESS LIST IN, AND FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#home-footer li, #home-contact-text li, #home-contact-hours li  
+        {
+            font-size: 3vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 2.5vh;             /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LIST ITEMS, FOR THE TEXT INSIDE THE ADDRESS LIST IN, AND FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#home-footer li, #home-contact-text li, #home-contact-hours li  
+        {
+            font-size: 2.5vw;                 /* <--- CHANGES THE FONT SIZE */
+            line-height: 4.5vh;               /* <--- CHANGES THE HEIGHT BETWEEN EVERY LINE BREAK */
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LIST ITEMS, FOR THE TEXT INSIDE THE ADDRESS LIST IN, AND FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+#home-footer li, #home-contact-text li, #home-contact-hours li 
+        {
+            font-size: 1.3vw;                /* <--- CHANGES THE FONT SIZE */
+        }
+        }
+
+
+
+/* FOR PHONES, FOR THE LOGO IMAGE IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#home-footer-logo img
+        {
+            width: 10vw;                  /* <--- CHANGES THE WIDTH OF THE IMAGE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LOGO IMAGE IN THE FOOTER IN THE HOME PAGE */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#home-footer-logo img
+        {
+            width: 7vw;                  /* <--- CHANGES THE WIDTH OF THE IMAGE */
+        }
+        } 
+
+
+
+/* FOR PHONES, FOR THE LOGO IMAGE TEXT IN THE FOOTER IN THE HOME PAGE  */
+@media only screen 
+and (min-width: 0px) 
+and (max-width: 640px) 
+        {
+#home-footer-logo figcaption 
+        {
+            font-size: 2.5vw;               /* <--- CHANGES THE FONT SIZE */
+        }
+        } 
+
+/* FOR TABLETS, FOR THE LOGO IMAGE TEXT IN THE FOOTER IN THE HOME PAGE  */
+@media only screen 
+and (min-width: 641px) 
+and (max-width: 1369px) 
+        {
+#home-footer-logo figcaption
+        {
+            font-size: 2vw;               /* <--- CHANGES THE FONT SIZE */      
+        }
+        } 
+ 
+/* FOR LAPTOPS, FOR THE LOGO IMAGE TEXT IN THE FOOTER IN THE HOME PAGE  */
+@media only screen 
+and (min-width: 1370px) 
+and (max-width: 1605px) 
+        {
+#home-footer-logo figcaption
+        {
+            font-size: 1.1vw;                 /* <--- CHANGES THE FONT SIZE */
+        }
+        }

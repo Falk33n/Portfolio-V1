@@ -1,0 +1,108 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./dist/**/*.{html,css,js}"],
+  theme: {
+    screens: {
+      '480media': '480px',  
+      '768media': '768px',
+      '1000media': '1000px',
+      '1400media': '1400px',
+    },
+    fontFamily: {
+      'inter': ['Inter', 'sans-serif'],
+      'fira': ['Fira Mono', 'monospace'],
+    },
+    letterSpacing: {
+      'small': '0.1rem',
+    },
+    extend: {
+      fontSize: {
+        '11xl': '11rem',
+        '12xl': '12rem',
+        '15xl': '15rem',
+        '19xl': '19rem',
+      },
+      boxShadow: {
+        'under': '4px 4px 10px rgba(0, 0, 0, 0.3)',
+        'under-small': '4px 4px 5px rgba(0, 0, 0, 0.3)',
+      },
+      colors: {
+        'loading': '#020C1B',
+        'background': '#0A192F',
+        'work-cover': 'rgba(10, 25, 47, .99)',
+        'menu-background': '#112240',
+        'navigation-background': 'rgba(10, 25, 47, .7)',
+        'accent': '#64FFDA',
+        'text-navigation': '#BAC5E4',
+        'text-bright': '#CCD6F6',
+        'text-dark': '#8892B0',
+        'transparent': 'transparent',
+      },
+      spacing: {
+        'initial': 'initial',
+        '2vw': '2vw',
+        '20vh': '20vh',
+        '25vh': '25vh',
+        '32vh': '32vh',
+        '45vw': '45vw',
+        '60vw': '60vw',
+        '32%': '32%',
+        '48.5%': '48.5%',
+        '10.5rem': '10.5rem', 
+        '11.5rem': '11.5rem', 
+        '13.5rem': '13.5rem', 
+        '16.5rem': '16.5rem', 
+        '17rem': '17rem', 
+        '21rem': '21rem', 
+        '22rem': '22rem', 
+        '23rem': '23rem', 
+        '26rem': '26rem', 
+        '27rem': '27rem', 
+        '28rem': '28rem', 
+        '30rem': '30rem', 
+        '32rem': '32rem', 
+        '35rem': '35rem', 
+        '36rem': '36rem', 
+        '38rem': '38rem', 
+        '43rem': '43rem', 
+        '50rem': '50rem', 
+        '60rem': '60rem', 
+        '70rem': '70rem',
+      },
+      zIndex: {
+        '1': '1',
+        '2': '2',
+        '3': '3',
+      },
+      flex: {
+        '5': '0 0 5%',
+        '20': '0 0 20%',
+        '30': '0 0 30%',
+        '40': '0 0 40%',
+        '90': '0 0 90%',
+      },
+      animation: {
+        'show-page': 'show-page .3s forwards 3.1s',
+        'remove-loading-container': 'remove-loading-container .01s forwards 3.1s',
+        'change-navigation-background': 'change-navigation-background .15s forwards 3.5s',
+        'show-navigation-bar-one': 'show-navigation-bar .3s forwards 3.6s',
+        'show-navigation-bar-two': 'show-navigation-bar .3s forwards 3.9s',
+      },
+      keyframes: {
+        'show-page': {
+          'to': { background: 'var(--background)', overflowY: 'scroll' },
+        },
+        'remove-loading-container': {
+          'to': { display: 'none' },
+        },
+        'change-navigation-background': {
+          'to': { background: 'var(--navigation-background)' },
+        },
+        'show-navigation-bar': {
+          'to': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}

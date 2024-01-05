@@ -1,0 +1,80 @@
+:root { 
+    --loading: #020C1B;
+    --background: #0A192F;
+    --navigation-background: rgba(10, 25, 47, .7);
+    --accent: #64FFDA;
+    --selection-background: #233554;
+    --text-bright: #CCD6F6;
+    --non-active: rgba(204, 214, 246, .1);
+    --text-dark: #8892B0;
+    --scrollbar: #495670;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--selection-background);
+    color: var(--text-bright);
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+    height: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar);
+    border-radius: .6rem; 
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#about-image {
+    filter: grayscale(1) saturate(6) contrast(2) brightness(2);
+}
+
+#experience, #work {
+    scroll-margin-top: 10rem;
+}
+
+.job-active {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.job-not-active {
+    border-color: var(--non-active);
+    color: var(--text-dark);
+}
+
+.work-image {
+    filter: grayscale(1) saturate(1) contrast(2);
+}
+
+#contact {
+    scroll-margin-top: -10rem;
+}
+
+@keyframes appear-animation {
+    45% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}

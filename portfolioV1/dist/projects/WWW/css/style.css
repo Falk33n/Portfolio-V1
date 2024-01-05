@@ -1,0 +1,994 @@
+/* CSS CHANGES THE STYLING OF ELEMENTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Oswald:wght@400;700&family=PT+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* * MEANS EVERY ELEMENT AND ::SELECTION MEANS WHEN THE ELEMENTS ARE SELECTED */
+*::selection
+        {
+            background-color: transparent;      /* <--- MAKES THE BACKGROUND COLOR TRANSPARENT WHEN SELECTED */
+        }
+
+/* FOR EVERY ELEMENT INSIDE BODY */     
+body
+        {
+            margin: 0;                          /* <--- SETS A STANDARD THAT REMOVES MARGIN */
+            max-width: 100vw;                   /* <--- SETS THE MAX WIDTH OF 100 VW FOR THE WHOLE PAGE */
+            font-family: loraregular;           /* <--- SETS A STANDARD FONT FAMILY */
+        }
+
+/* FOR EVERY IMAGE ON THE WEBSITE */
+figure
+        {
+            margin: 0;                          /* <--- SETS A STANDARD THAT REMOVES MARGIN */
+        }
+
+
+
+/* FOR THE HEADER THAT IS ON THE TOP OF THE PAGE */
+header
+        {
+            background-color: #353838;        /* <--- SETS THE BACKGROUND TO DISPLAY A DARK GRAY COLOR */
+            min-height: 4vh;                    /* <--- SETS THE MINIMUM HEIGHT OF ELEMENT TO BE 4 VH */
+            width: 100vw;                       /* <--- SETS THE WIDTH TO BE 100 VW */
+            
+        }
+
+/* FOR EVERY PARAGRAPH TEXT INSIDE HEADER */
+header p
+        {
+            color: #FFFFFF;                   /* <--- SETS THE TEXTS COLOR TO BE WHITE */
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            padding: 0.8vh 0 0.8vh 0;           /* <--- ADDS 0.8 VH PADDING TO THE TOP AND BOTTOM OF ELEMENT, 
+                                                        THIS PUSHES THE HEADER ELEMENT AWAY, MAKING IT BIGGER */
+            text-align: center;                 /* <--- CENTERS THE TEXT */
+            font-family: oswaldregular;         /* <--- CHANGES STANDARD FONT FAMILY */
+            font-size: 0.8vw;                   /* <--- SETS THE FONT SIZE TO BE 0.8 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN TEXT IS HOVERED */
+        }
+
+/* FOR THE HEADER, NAV MENU, AND, NAV BAR */
+header, .nav-container
+        {
+            position: fixed;                    /* <--- MAKES THE ELEMENTS BE STUCK IN THEIR POSITION ON SCROLL */
+            z-index: 2;                         /* <--- MAKES THE ELEMENTS TO BE LAYERED ON TOP OF EVERY OTHER ELEMENT */
+        }
+
+
+
+/* FOR THE NAV MENU */
+.nav-menu
+        {
+            margin: 0;                          /* <--- REMOVES MARGIN */
+            padding: 0;                         /* <--- REMOVES PADDING */
+        }
+
+/* FOR THE LIST OF LINKS IN NAV MENU */
+.nav-menu ul
+        {
+            display: flex;                      /* <--- DISPLAYS THE LIST IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: row;                /* <--- SETS THE FLEX DIRECTION TO BE ROW (HORIZONTAL) */
+            justify-content: center;            /* <--- MAKES EVERY ELEMENT BE CENTERED HORIZONTALLY */
+            list-style-type: none;              /* <--- REMOVES THE BULLET CREATED FROM UL */
+            background-color: #414545;        /* <--- SETS THE BACKGROUND COLOR TO BE DARK GRAY */
+            margin: 4vh 0 0 0;                  /* <--- SETS THE MARGIN TO BE 0 EXCEPT FROM THE TOP WHERE IT IS SET TO BE 4 VH, PUSHING THE
+                                                         ITEMS FROM THE TOP */
+            padding: 0;                         /* <--- REMOVES PADDING */
+            overflow: clip;                     /* <--- IF ELEMENTS OVERFLOW, THAN CLIP OF THE OVERFLOW */
+            width: 100vw;                       /* <--- SETS THE WIDTH OF UL ELEMENT TO TAKE UP THE WHOLE WIDTH OF SCREEN */
+            min-height: auto;                   /* <--- SETS THE MIN HEIGHT TO AUTOMATIC */
+        }
+
+/* FOR THE LINKS INSIDE NAV MENU */
+.nav-menu a
+        {
+            text-decoration: none;              /* <--- REMOVES THE UNDERLINE FROM LINKS */
+        }
+
+/* FOR THE LINKS INSIDE NAV MENU WHEN HOVERED */
+.nav-menu a:hover
+        {
+            background-color: #4d5252;        /* <--- SETS THE BACKGROUND COLOR TO BE A DARKER GRAY */
+            text-decoration: underline;         /* <--- SETS THE TEXT TO HAVE A UNDERLINE */
+            text-decoration-color: #FFFFFF;   /* <--- SETS THE COLOR OF THAT UNDERLINE TO BE WHITE */
+        }
+
+/* FOR THE ITEM THAT IS CURRENTLY WHAT PAGE YOU ARE ON */
+.nav-menu-active
+        {
+            background-color: #282b2b;        /* <--- SETS THE BACKGROUND COLOR TO BE A DARKER GRAY */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR EVERY LIST INSIDE THE NAV MENU */
+.nav-menu li
+        {
+            font-family: pt_sansregular;        /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- SETS THE COLOR OF TEXT TO WHITE */
+            width: 20vw;                        /* <--- SETS THE WIDTH OF EVERY LIST TO BE 20 VW */
+            text-align: center;                 /* <--- MAKES THE TEXT INSIDE THE LIST TO BE CENTERED HORIZONTALLY */
+            padding: 0.8vh 0 0.8vh 0;           /* <--- ADDS 0.8 VH TO THE TOP AND BOTTOM PUSHING THE CONTAINER, REMOVES PADDING 
+                                                        FROM THE LEFT AND RIGHT */
+        }
+
+
+
+/* FOR THE NAV BAR JUST UNDER THE NAV MENU */
+.nav-functions
+        {
+            width: 100vw;                       /* <--- SETS THE WIDTH TO TAKE UP THE WHOLE SCREEN */
+            background-color: #e5e5e5;        /* <--- SETS THE BACKGROUND COLOR TO BE A VERY LIGHT GRAY */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            border-bottom: 1px solid #4d5252; /* <--- ADDS A BORDER TO THE BOTTOM OF THE ELEMENT, THAT HAS A DARK GRAY COLOR */
+        }
+
+/* FOR EVERY IMAGE INSIDE THE NAV BAR */
+.nav-functions img
+        {
+            width: 4vw;                         /* <--- MAKES THE IMAGES HAVE A WIDTH OF 4VW */
+            margin-left: 2vw;                   /* <--- MAKES THE IMAGES BE PUSHED FROM THE LEFT BY 2VW */
+        }
+
+/* FOR THE SEARCHBAR */
+.search-bar
+        {   
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            align-items: center;                /* <--- MAKES THE ITEMS BE ALIGNED CENTER VERTICALLY */
+            margin-left: 2vw;                   /* <--- MAKES THE SEARCHBAR BE PUSHED TO THE LEFT BY 2VW */
+        }
+
+/* FOR THE SEARCH ICON INSIDE SEARCHBAR */
+.search-bar-icon-search
+        {
+            height: 3.5vh;                      /* <--- SETS THE HEIGHT TO BE 3.5 VH */
+            border: solid 1px #FFFFFF;        /* <--- CREATES A BORDER WITH THE COLOR WHITE */
+            background-color: #FFFFFF;        /* <--- SETS THE BACKGROUND COLOR TO BE WHITE */
+            border-top-left-radius: 25px;       /* <--- MAKES ROUNDED CORNER */
+            border-bottom-left-radius: 25px;    /* <--- MAKES ROUNDED CORNER */
+            font-size: 1vw;                     /* <--- SETS THE FONT SIZE TO 1VW */
+            width: 2vw;                         /* <--- SETS THE WIDTH TO BE 2VW */
+            cursor: pointer;                    /* <--- CHANGES THE CURSOR TO POINTER WHEN HOVERED */
+        }
+
+/* FOR THE INPUT FIELD OF THE SEARCHBAR */
+.search-bar input[type=text]
+        {
+            height: 3.3vh;                      /* <--- SETS THE HEIGHT TO BE 3.3 VH */
+            border: 1px solid #FFFFFF;        /* <--- CREATES A BORDER WITH THE COLOR WHITE */
+            border-top-right-radius: 25px;      /* <--- MAKES ROUNDED CORNER */
+            border-bottom-right-radius: 25px;   /* <--- MAKES ROUNDED CORNER */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            outline: none;                      /* <--- REMOVES THE OUTLINE WHEN SELECTED */
+            font-size: 0.8vw;                   /* <--- CHANGES FONT SIZE TO BE 0.8 VW */
+            width: 9vw;                         /* <--- SETS THE WIDTH TO BE 9 VW */
+            font-family: ralewaythin;           /* <--- CHANGES THE FONT FAMILY */
+        }
+
+/* FOR THE INPUT FIELD WHEN ITS CLICKED ON */
+.search-bar input[type=text]:focus
+        {
+            font-family: loraregular;           /* <--- CHANGES THE FONT FAMILY */
+        }
+
+/* FOR THE TEXT IN THE INPUT FIELD WHEN ITS CLICKED ON */
+.search-bar input[type=text]:focus::placeholder
+        {
+            color: transparent;                 /* <--- REMOVES THE TEXT, MAKING IT CLEARER THAT THE USER CAN WRITE INSIDE IT */
+        }
+
+/* CHANGES THE THE TEXT IN THE INPUT FIELD OF THE SEARCHBAR */
+.search-bar input[type=text]::placeholder
+        {
+            font-weight: bold;                  /* <--- MAKES THE TEXT BE BOLD */
+        }
+
+/* FOR THE QUOTE INSIDE NAV BAR */
+.quote
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            align-self: center;                 /* <--- MAKES THE ELEMENT BE CENTERED VERTICALLY */
+            margin: 0 0 0 10vw;                 /* <--- SETS THE MARGIN TO BE 0 BUT PUSHED THE ELEMENT 10 VW TO THE LEFT */
+            font-size: 1.4vw;                   /* <--- SETS THE FONT SIZE TO BE 1.4 VW */
+            word-spacing: 0.2vw;                /* <--- ADDS A SPACE OF 0.2 VW BETWEEN EVERY WORD */
+            color: #000000;                   /* <--- SETS THE COLOR OF TEXT TO BE BLACK */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE QUOTE AUTHOR INSIDE NAV BAR */
+.quote-author
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                BETWEEN THE ELEMENTS */
+            align-self: end;                    /* <--- MAKES THE ELEMENT BE PLACED IN THE BOTTOM VERTICALLY */
+            margin: 0 5vw 1vh 0.5vw;            /* <--- REMOVES THE TOP MARGIN, PUSHES IT 5 VW FROM THE RIGHT, 1 VH FROM THE BOTTOM 
+                                                        AND 0,5 VW FROM THE LEFT */
+            font-size: 1vw;                     /* <--- MAKES THE FONT SIZE BE 1 VW */
+            word-spacing: 0.2vw;                /* <--- ADDS A SPACE OF 0.2 VW BETWEEN EVERY WORD */
+            color: #000000;                   /* <--- SETS THE TEXT COLOR TO BE BLACK */
+            overflow: hidden;                   /* <--- REMOVES ANY OVERFLOW */
+            letter-spacing: 0.2vw;              /* <--- ADDS A SPACE OF 0.2 VW BETWEEN EVERY LETTER */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+            font-weight: bold;                  /* <--- MAKES THE TEXT BE DISPLAYED BOLD */
+        }
+
+/* FOR THE SIGN UP AND LOG IN BUTTON */
+.sign-up-log-in
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                BETWEEN THE ELEMENTS */
+            flex: 1;                            /* <--- MAKES THE ELEMENT HAVE FLEX VALUE OF 1 (THIS MAKES THE ELEMENT TAKE UP ANY REMANING
+                                                        SPACE OF THE CONTAINER */
+            justify-content: end;               /* <--- MAKES THE ELEMENT BE DISPLAYED AT THE END HORIZONTALLY */
+            align-items: center;                /* <--- MAKES THE ELEMENT CENTERED VERTICALLY */
+            margin-right: 2vw;                  /* <--- PUSHES THE ELEMENT 2 VW FROM THE RIGHT */
+        }
+
+/* FOR THE SIGN UP BUTTON */
+.sign-up-button
+        {
+            width: 5.5vw;                       /* <--- SETS THE WIDTH TO BE 5.5 VW */
+            background-color: #FFFFFF;        /* <--- CHANGES THE BACKGROUND COLOR TO BE WHITE */
+            border: none;                       /* <--- REMOVES THE BORDER */
+            border-radius: 25px;                /* <--- MAKES THE BUTTON HAVE ROUNDED CORNERS */
+            margin: 0 0.5vw 0 0;                /* <--- REMOVES THE MARGIN, PUSHES THE ELEMENT 0.5 VW FROM THE RIGHT */
+            padding: 0.6vh 1vw 0.6vh 1vw;       /* <--- MAKES THE TEXT INSIDE PUSH THE BORDER 0.6 VH TO THE TOP, 1 VW TO THE RIGHT,
+                                                        0.6 TO THE BOTTOM AND 1 VW TO THE LEFT */
+            font-size: 0.7vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.7 VW */
+            cursor: pointer;                    /* <--- MAKES THE CURSOR THE BE A POINTER WHEN HOVERED */
+            font-family: loraregular;           /* <--- CHANGES THE FONT FAMILY */
+        }
+
+/* FOR THE / BETWEEN THE SIGN UP AND LOG IN BUTTONS */
+.slash
+        {
+            font-size: 0.5vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.5 VW */
+            font-weight: bold;                  /* <--- MAKES THE SLASH BE BOLD */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+/* FOR THE LOG IN BUTTON */
+.log-in-button
+        {
+            width: 5.5vw;                       /* <--- SETS THE WIDTH TO BE 5.5 VW */
+            background-color: #FFFFFF;        /* <--- CHANGES THE BACKGROUND COLOR TO BE WHITE */
+            border: none;                       /* <--- REMOVES THE BORDER */
+            border-radius: 25px;                /* <--- MAKES THE BUTTON HAVE ROUNDED CORNERS */
+            margin: 0 0 0 0.5vw;                /* <--- REMOVES THE MARGIN, PUSHES THE ELEMENT 0.5 VW FROM THE RIGHT */
+            padding: 0.6vh 1vw 0.6vh 1vw;       /* <--- MAKES THE TEXT INSIDE PUSH THE BORDER 0.6 VH TO THE TOP, 1 VW TO THE RIGHT,
+                                                        0.6 TO THE BOTTOM AND 1 VW TO THE LEFT */
+            font-size: 0.7vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.7 VW */
+            cursor: pointer;                    /* <--- MAKES THE CURSOR THE BE A POINTER WHEN HOVERED */
+            font-family: loraregular;           /* <--- CHANGES THE FONT FAMILY */
+        }
+
+/* FOR THE SIGN UP BUTTON WHEN HOVERED */
+.sign-up-button:hover
+        {
+            background-color: #f2f2f2;        /* <--- CHANGES THE BACKGROUND COLOR THE BE WHITE */
+        } 
+
+/* FOR THE LOG IN BUTTON WHEN HOVERED */
+.log-in-button:hover
+        {
+            background-color: #f2f2f2;        /* <--- CHANGES THE BACKGROUND COLOR THE BE WHITE */
+        } 
+
+
+
+/* FOR THE SIDE MENU */
+.side-menu
+        {
+            position: fixed;                    /* <--- MAKES THE ELEMENTS BE STUCK IN THEIR POSITION ON SCROLL */
+            z-index: 1;                         /* <--- MAKES THE ELEMENTS TO BE LAYERED ON TOP OF EVERY OTHER ELEMENT THAT HAS A 
+                                                        LOWER Z INDEX */
+            background-color: #E5E5E5;        /* <--- CHANGES THE BACKGROUND COLOR TO BE A LIGHT GRAY */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX ITEMS TO BE DISPLAYED VERTICALLY */
+            width: 15vw;                        /* <--- CHANGES THE WIDTH TO BE 15 VW */
+            margin:  15vh 0 0 0;                /* <--- REMOVES THE MARGIN, PUSHES THE ELEMENTS 15 VH FROM THE TOP */
+            padding: 0 0 2vh 0;                 /* <--- REMOVES THE PADDING, PUSHES THE HEADING INSIDE 2 VH TO THE BOTTOM */
+            border-right: 1px solid #4d5252;  /* <--- CREATES A BORDER TO THE RIGHT WITH THE A DARK GRAY COLOR */
+            height: 87vh;                       /* <--- MAKES THE ELEMENT HAVE A HEIGHT OF 87 VH */
+            overflow: clip;                     /* <--- CLIPS ANY OVERFLOW OF CONTENT */
+        }
+
+/* FOR THE LIST ITEMS INSIDE THE SIDE MENU */
+.side-menu li
+        {   
+            list-style-type: none;              /* <--- REMOVES THE BULLETS FROM THE UL */
+            padding: 0.5vh 0 0.5vh 1vw;         /* <--- REMOVES PADDING FROM THE RIGHT, PUSHES THE BORDER OF THE LIST 0.5 VH TO THE TOP,
+                                                        AND BOTTOM, AND PUSHES IT 1 VW TO THE LEFT */
+            line-height: 1vw;                   /* <--- ADDS A SPACE BETWEEN EVERY LINE BREAK TO BE 1 VW */
+            font-family: pt_sansregular;        /* <--- CHANGES THE FONT FAMILY */
+        }
+
+/* FOR THE LINKS INSIDE THE SIDE MENU */   
+.side-menu a
+        {   
+            text-decoration: none;              /* <--- REMOVES THE UNDERLINE */
+            color: #000000;                   /* <--- CHANGES THE COLOR TO BE BLACK */
+        }
+
+/* FOR THE ITEMS INSIDE THE SIDE MENU, ALSO THE ACTIVE WEB PAGE WHEN HOVERED */        
+.side-menu a:hover, .menu-active:hover
+        {
+            background-color: #cccccc;        /* <--- CHANGES THE BACKGROUND COLOR TO BE LIGHT GRAY */ 
+        }
+
+/* FOR THE LINK THAT IS ACTIVE INSIDE SIDE MENU */ 
+.side-menu-active
+        {
+            background-color: #d8d8d8;        /* <--- CHANGES THE BACKGROUND COLOR TO BE A DARKER LIGHT GRAY */ 
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */ 
+        }
+
+/* FOR THE HEADING INSIDE THE SIDE MENU */ 
+.side-menu-h2
+        {
+            text-align: center;                 /* <--- CENTERS THE HEADING HORIZONTALLY */ 
+            margin: 2vh 1vw 1vh 1vw;            /* <--- PUSHED THE ELEMENT 2 VH FROM THE TOP, 1 VW FROM THE RIGHT, 1 VH FROM THE BOTTOM
+                                                        AND 1 VW FROM THE LEFT */ 
+            padding: 0;                         /* <--- REMOVES PADDING */ 
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */ 
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */ 
+        }
+
+
+
+/* FOR THE CONTAINTER OF THE MAIN SECTION OF THE WEB PAGE */ 
+.main
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: row;                /* <--- CHANGES THE DIRECTION OF THE FLEX ITEMS TO BE DISPLAYED HORIZONTALLY */
+            position: relative;                 /* <--- CHANGES THE POSITION OF THE CONTAINER TO BE POSITIONED RELATIVE TO OTHER ELEMENTS */
+        }
+
+/* FOR THE CONTENT INSIDE THE MAIN CONTAINER */
+.main-content
+        {
+            margin: 13vh 0 0 15vw;              /* <--- REMOVES THE MARGIN FROM THE RIGHT AND BOTTOM, PUSHES THE ELEMENT 13 VH FROM THE TOP
+                                                        AND 15 VW FROM THE LEFT */
+            width: 100vw;                       /* <--- CHANGES THE WIDTH TO BE 100 VW OF THE SCREEN */
+        }
+
+/* FOR THE CONTENT INSIDE THE MAIN CONTAINER IN THE HOME PAGE */
+#home-main-content
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN FROM THE RIGHT AND BOTTOM, PUSHES THE ELEMENT 13 VH FROM THE TOP
+                                                        AND 15 VW FROM THE LEFT */
+            width: 100vw;                       /* <--- CHANGES THE WIDTH TO BE 100 VW OF THE SCREEN */
+        }
+
+/* FOR THE SECTION TAG */
+section
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+        }
+
+/* FOR THE SECTION IN THE INDEX PAGE */
+#section-background
+{           
+            margin-top: 13vh;                   /* <--- ADDS MARGIN FROM THE TOP */
+            width: 100%;                        /* <--- MAKES THE WIDTH TAKE UP ALL SPACE OF SCREEN SIZE */
+            display: block;                     /* <--- BLOCK MAKES THE IMAGE START ON A NEW LINE AND TAKE UP THE AVAILABLE WIDTH 
+                                                        OF THE CONTAINER */
+            object-fit: cover;                  /* <--- MAKES THE BACKGROUND IMAGE COVER THE CONTAINER EVEN IF THE CONTAINER IS BIGGER
+                                                        THAN THE IMAGE */
+}
+
+/* FOR THE LARGE HEADING INSIDE THE MAIN CONTENT */
+.main-h2
+        {
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            margin: 3vh 0 0 5vw;                /* <--- REMOVES THE RIGHT AND BOTTOM MARGIN, PUSHES 3 VH FROM THE TOP AND 5 VW FROM 
+                                                        THE LEFT */
+            font-size: 1.5vw;                   /* <--- CHANGES THE FONT SIZE TO BE 1.5 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE SMALLER HEADING INSIDE THE MAIN CONTENT */
+.main-h3
+        {
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            margin-left: 7.5vw;                 /* <--- PUSHES 7.5 VW FROM THE LEFT */
+            font-size: 1vw;                     /* <--- CHANGES THE FONT SIZE TO BE 1 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PARAGRAPH TEXT INSIDE THE MAIN CONTENT */
+.main-p
+        {
+            margin: 0 10vw 1vh 10vw;            /* <--- REMOVES THE MARGIN TOP, PUSHES THE ELEMENTS 10 VW FROM THE RIGHT, 1 VH FROM 
+                                                        THE BOTTOM, AND 10 VW FROM THE LEFT */
+            font-size: 0.8vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.8 VW */
+            line-height: 2.6vh;                 /* <--- MAKES EVERY LINE BREAK HAVE A SPACE OF 2.6 VH */
+            word-spacing: 0.2vw;                /* <--- CHANGES THE SPACE BETWEEN EVERY WORD TO BE 0.2 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE TEXT OF THE IMAGES INSIDE THE MAIN CONTENT */
+.main-figcaption
+        {
+            margin: 0 10vw 1vh 10vw;            /* <--- REMOVES THE TOP MARGIN, PUSHES THE ELEMENT 10 VW FROM THE RIGHT, 1 VH FROM 
+                                                        THE BOTTOM, AND 10 VW FROM THE LEFT */
+            font-size: 0.8vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.8 VW */
+            word-spacing: 0.2vw;                /* <--- CHANGES THE SPACE BETWEEN EVERY WORD TO BE 0.2 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE LISTS INSIDE THE MAIN CONTENT */
+.main-ul
+        {
+            margin: 0 10vw 1vh 10vw;            /* <--- REMOVES THE TOP MARGIN, PUSHES THE ELEMENT 10 VW FROM THE RIGHT, 1 VH FROM
+                                                        THE BOTTOM, AND 10 VW FROM THE LEFT */
+            font-size: 0.8vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.8 VW */
+            line-height: 3vh;                   /* <--- MAKES EVERY LINE BREAK HAVE A SPACE OF 3 VH */
+            word-spacing: 0.1vw;                /* <--- CHANGES THE SPACE BETWEEN EVERY WORD TO BE 0.1 VW */
+            padding: 0 0 0 1vw;                 /* <--- REMOVES THE PADDING, PUSHING ELEMENT 1 VW TO THE LEFT */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE IMAGE CONTAINERS INSIDE THE MAIN CONTENT */
+.main-img
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: row;                /* <--- CHANGES THE DIRECTION OF THE FLEX ITEMS TO BE DISPLAYED HORIZONTALLY */
+            justify-content: center;            /* <--- MAKES THE ELEMENT BE DISPLAYED CENTER HORIZONTALLY */
+            gap: 1vw;                           /* <--- CHANGES THE GAP BETWEEN FLEX ITEMS TO HAVE A SPACE OF 1 VW */
+            margin: 0 0 1vh 0;                  /* <--- REMOVES THE MARGIN, PUSHES THE ELEMENT 1 VH FROM THE BOTTOM */
+        }
+
+/* FOR THE PICTURE OF BOB KAHN IN THE HISTORY OF INTERNET PAGE */
+#main-img-bob-kahn
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 30vw;                        /* <--- CHANGES THE WIDTH TO BE 30 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF VINT CERF IN THE HISTORY OF INTERNET PAGE */
+#main-img-vint-cerf
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 30vw;                        /* <--- CHANGES THE WIDTH TO BE 30 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF QUENTIN STAFFORD FRASER IN THE HISTORY OF INTERNET PAGE */
+#main-img-quentin-stafford-fraser
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 25vw;                        /* <--- CHANGES THE WIDTH TO BE 25 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF PAUL JARDETZSKY IN THE HISTORY OF INTERNET PAGE */
+#main-img-paul-jardetzsky
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 25vw;                        /* <--- CHANGES THE WIDTH TO BE 25 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF JIMMY WALES IN THE HISTORY OF INTERNET PAGE */
+#main-img-jimmy-wales
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 15vw;                        /* <--- CHANGES THE WIDTH TO BE 15 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF LARRY SANGER IN THE HISTORY OF INTERNET PAGE */
+#main-img-larry-sanger
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 30vw;                        /* <--- CHANGES THE WIDTH TO BE 30 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE FIRST PICTURE OF BILL GATES IN THE BILL GATES PAGE */
+#main-img-bill-gates1
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 30vw;                        /* <--- CHANGES THE WIDTH TO BE 30 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF PAUL ALLEN IN THE BILL GATES PAGE */
+#main-img-paul-allen
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 20vw;                        /* <--- CHANGES THE WIDTH TO BE 20 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE SECOND PICTURE OF BILL GATES IN THE BILL GATES PAGE */
+#main-img-bill-gates2
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 25vw;                        /* <--- CHANGES THE WIDTH TO BE 25 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE PICTURE OF WARREN BUFFET IN THE BILL GATES PAGE */
+#main-img-warren-buffet
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 30vw;                        /* <--- CHANGES THE WIDTH TO BE 30 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE FIRST STOCK PHOTO IN THE AGILE METHODOLOGY PAGE */
+#main-img-stock-photo1
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 30vw;                        /* <--- CHANGES THE WIDTH TO BE 30 VW */
+            height: 30vh;                       /* <--- CHANGES THE HEIGHT TO BE 30 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE COMPARISON CHART IN THE AGILE METHODOLOGY PAGE */
+#main-img-comparison-chart
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 40vw;                        /* <--- CHANGES THE WIDTH TO BE 40 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE AGILE PROCESS PHOTO IN THE AGILE METHODOLOGY PAGE */
+#main-img-agile-process
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 35vw;                        /* <--- CHANGES THE WIDTH TO BE 35 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE SECOND STOCK PHOTO IN THE AGILE METHODOLOGY PAGE */
+#main-img-stock-photo2
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 25vw;                        /* <--- CHANGES THE WIDTH TO BE 25 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE THIRD STOCK PHOTO IN THE AGILE METHODOLOGY PAGE */
+#main-img-stock-photo3
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 25vw;                        /* <--- CHANGES THE WIDTH TO BE 25 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE FOURTH STOCK PHOTO IN THE AGILE METHODOLOGY PAGE */
+#main-img-stock-photo4
+        {
+            margin: 0;                          /* <--- REMOVES THE MARGIN */
+            width: 40vw;                        /* <--- CHANGES THE WIDTH TO BE 40 VW */
+            height: 40vh;                       /* <--- CHANGES THE HEIGHT TO BE 40 VH */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+
+
+/* FOR THE LINKS INSIDE THE MAIN CONTENT */
+.main a 
+        {
+            pointer-events: auto;               /* <--- ENABLES POINTER EVENTS WHEN HOVERED */
+            color: #2d88f8;                   /* <--- CHANGES THE COLOR OF THE LINKS TO BE BLUE */
+        }
+
+/* FOR THE VIDEO INSIDE THE MAIN CONTENT IN THE AGILE METHODOLOGY PAGE */     
+iframe
+        {
+            position: relative;                 /* <--- MAKES THE ELEMENT BE POSITIONED RELATIVE TO OTHER ELEMENTS */
+            z-index: 1;                         /* <--- MAKES THE ELEMENT BE DISPLAY ON TOP OVER OTHER ELEMENTS THAT HAVE A LOWER Z INDEX */
+            display: block;                     /* <--- BLOCK MAKES THE VIDEO START ON A NEW LINE AND TAKE UP THE AVAILABLE WIDTH 
+                                                        OF THE CONTAINER */
+            width: 50vw;                        /* <--- SETS THE WIDTH TO BE 50 VW */
+            height: 50vh;                       /* <--- SETS THE HEIGHT TO BE 50 VH */
+            margin: 0 auto;                     /* <--- REMOVES MARGIN AND SETS VALUE AUTO, THIS CENTERS THE ELEMENT HORIZONTALLY */
+            margin-bottom: 1vh;                 /* <--- PUSHING ELEMENT 1 VH FROM BOTTOM */
+            border: 1px solid #4d5252;        /* <--- ADDS A BORDER WITH A DARK GRAY COLOR */
+        }
+
+/* FOR EVERY TEXT TO PICTURES  */
+figcaption
+        {
+            font-style: italic;                 /* <--- MAKES THE TEXT ITALIC */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENT WHEN HOVERED */
+        }
+
+/* FOR THE SOURCES CONTAINER AT THE BOTTOM OF THE MAIN CONTENT  */
+.sources
+        {
+            margin: 0 10vw 1vh 10vw;            /* <--- REMOVES TOP MARGIN, PUSHES FROM THE LEFT AND RIGHT BY 10 VW AND FROM THE BOTTOM 
+                                                        1 VH  */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- DISPLAYS THE ITEMS IN THE ELEMENT VERTICALLY */
+        }
+
+/* FOR THE LINKS IN SOURCES CONTAINER */
+.sources a
+        {
+            color: #000000;                   /* <--- CHANGES THE COLOR TO BLACK */
+            text-decoration: none;              /* <--- REMOVES THE UNDERLINE */
+        }
+
+/* FOR THE LINKS IN SOURCES CONTAINER WHEN HOVERED */
+.sources a:hover
+        {
+            text-decoration: underline;         /* <--- SHOWS THE UNDERLINE WHEN HOVERED */
+        }
+
+/* FOR THE LIST ITEMS IN SOURCES CONTAINER */
+.sources li
+        {
+            line-height: 2.6vh;                 /* <--- CHANGES THE SPACE BETWEEN LINE BREAKS TO BE 2.6 VH */
+        }
+
+
+/* FOR THE CONTAINER IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE  */
+#become-a-member 
+        {
+            max-width: 100vw;                   /* <--- CHANGES THE MAX WIDTH TO HORIZONTALLY COVER THE SCREEN */
+            overflow: clip;                     /* <--- CLIPS ANY OVERFLOW OF ELEMENT */
+        }
+
+/* FOR THE LABELS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+#become-a-member label
+        {
+            margin-left: 10vw;                  /* <--- PUSHES THE ELEMENT 10 VW FROM THE LEFT */
+            font-size: 1vw;                     /* <--- CHANGES FONT SIZE TO BE 1 VW */
+        }
+      
+/* FOR THE INPUT FIELDS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+input[id=e-mail], input[id=password], input[id=password-repeat] 
+        {
+            width: 60vw;                        /* <--- CHANGES THE WIDTH TO BE 60 VW */
+            padding: 2vh;                       /* <--- ADDS PADDING PUSHING THE ELEMENT BORDER BY 2 VH */
+            margin: 2vh 10vw 2vh 10vw;          /* <--- ADDS MARGIN MAKING ELEMENT PUSH 2 VH FROM THE TOP AND BOTTOM, AND 10 VW FROM THE
+                                                        LEFT AND RIGHT */
+            display: inline-block;              /* <--- DISPLAYS THE INPUT FIELD ON THE SAME LINE AS ADJACENT CONTENT */
+            border: none;                       /* <--- REMOVES THE BORDER */
+            background-color: #f1f1f1;        /* <--- CHANGES THE BACKGROUND COLOR TO LIGHT GRAY */
+            font-size: 0.8vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.8 VW */
+        }
+       
+/* FOR THE INPUT FIELDS IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE WHEN CLICKED ON */
+input[id=e-mail]:focus, input[id=password]:focus, input[id=password-repeat]:focus  
+        {
+            background-color: #E5E5E5;        /* <--- CHANGES THE BACKGROUND COLOR TO A DARKER LIGHT GRAY */
+            outline: none;                      /* <--- REMOVES THE OUTLINE WHEN ELEMENT CLICKED ON */
+        }
+        
+/* FOR THE REGISTER BUTTON IN THE MAIN CONTENT ON THE BECOME A MEMBER PAGE */
+#register-button 
+        {
+            background-color: #414545;        /* <--- CHANGES THE BACKGROUND COLOR TO DARK GRAY */
+            color: #FFFFFF;                   /* <--- CHANGES THE FONT COLOR TO WHITE */
+            padding: 2vh;                       /* <--- PUSHES THE BORDER OF THE ELEMENT BY 2 VH */
+            margin: 2vh 18vw 2vh 18vw;          /* <--- ADDS MARGIN, PUSHES 2 VH FROM THE TOP AND BOTTOM, AND 18 VW FROM THE LEFT AND RIGHT */
+            border: none;                       /* <--- REMOVES THE BORDER */
+            cursor: pointer;                    /* <--- MAKES THE CURSOR SHOW A POINTER WHEN HOVERED */
+            width: 45vw;                        /* <--- CHANGES THE WIDTH TO BE 45 VW */
+            border-radius: 50px;                /* <--- MAKES THE BUTTON HAVE ROUNDED CORNERS */
+            font-size: 0.8vw;                   /* <--- CHANGES THE FONT SIZE OF THE TEXT TO 0.8 VW */
+        }
+
+
+
+/* FOR THE FOOTER CONTAINER AT THE BOTTOM OF THE WEBSITE IN THE HOME PAGE*/
+#home-footer
+        {
+            background-color: #353838;        /* <--- CHANGES THE BACKGROUND COLOR TO DARK GRAY */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */                                               
+            flex-direction: row;                /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE HORIZONTAL */
+            border-top: 1px solid #5E1914;    /* <--- ADDS A BORDER TO THE TOP WITH A RED COLOR */
+        }
+
+/* FOR THE LARGE HEADINGS IN THE FOOTER IN THE HOME PAGE */
+#home-footer-h2
+        {
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 2vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 2 VH FROM THE TOP */
+            margin-bottom: 2vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 2 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF THE HEADING TO BE WHITE */
+            font-size: 1.6vw;                   /* <--- CHANGES THE FONT SIZE TO BE 1.6 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE UNORDERED LISTS IN THE FOOTER IN THE HOME PAGE */
+#home-footer ul
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */  
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+            justify-content: start;             /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE START HORIZONTALLY */
+            list-style-type: none;              /* <--- REMOVES THE BULLETS FROM THE LIST */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE UL BE CENTER HORIZONTALLY */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            width: 100vw;                       /* <--- CHANGES THE WIDTH TO BE 100 VW */
+        }
+
+/* FOR THE LINKS IN THE FOOTER IN THE HOME PAGE */
+#home-footer a
+        {
+            text-decoration: none;              /* <--- REMOVES THE UNDERLINE */
+            width: 26.6vw;                      /* <--- CHANGES THE WIDTH TO 26.6 */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE LINKS BE CENTER HORIZONTALLY */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            text-align: center;                 /* <--- ALIGNS THE TEXT CENTER HORIZONTALLY */
+            line-height: 2vw;                   /* <--- ADDS SPACING BETWEEN LINE BREAKS BY 2 VW */
+        }
+
+/* FOR THE LINKS IN THE FOOTER WHEN HOVERED IN THE HOME PAGE */
+#home-footer a:hover
+        {
+            text-decoration: underline;         /* <--- DISPLAYS THE UNDERLINE */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF THE TEXT TO BE WHITE */
+        }
+
+/* FOR THE LIST ITEMS IN THE FOOTER IN THE HOME PAGE */
+#home-footer li
+        {
+            font-family: pt_sansregular;        /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF THE TEXT TO BE WHITE */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE LIST ITEMS BE CENTER HORIZONTALLY */
+            font-size: 1vw;                     /* <--- CHANGES THE FONT SIZE TO BE 1 VW */
+        }
+
+
+/* FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER IN THE HOME PAGE */
+#home-contact-h3
+        {
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 1vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 1 VH FROM THE TOP */
+            margin-bottom: 1vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 1 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-size: 1.2vw;                   /* <--- CHANGES THE FONT SIZE TO BE 1.2 VW */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE TEXT INSIDE THE ADDRESS LIST IN THE FOOTER IN THE HOME PAGE */
+#home-contact-text
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 1vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 1 VH FROM THE TOP */
+            margin-bottom: 3vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 3 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            pointer-events: auto;               /* <--- ADDS POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE TEXT INSIDE THE ADDRESS LIST IN THE FOOTER WHEN SELECTED IN THE HOME PAGE */
+#home-contact-text ::selection
+        {
+            background-color: #2d88f8;       /* <--- CHANGES THE BACKGROUND COLOR OF TEXT TO BE BLUE WHEN SELECTED */
+        }
+
+/* FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER IN THE HOME PAGE */
+#home-contact-hours
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 1vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 1 VH FROM THE TOP */
+            margin-bottom: 3vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 3 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE LOGO CONTAINER IN THE FOOTER IN THE HOME PAGE */
+#home-footer-logo
+        {
+            background-color: #353838;        /* <--- CHANGES THE BACKGROUND COLOR TO BE DARK GRAY */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            justify-content: center;            /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE CENTER HORIZONTALLY */
+            align-self: center;                 /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE CENTER VERTICALLY */
+            padding: 5vh 0 2vh 0;               /* <--- REMOVES LEFT AND RIGHT PADDING, ADDS 5 VH PUSHING THE BORDER OF THE ELEMENT 
+                                                        TO THE TOP, ADDS 2 VH PUSHING THE BORDER OF THE ELEMENT TO THE BOTTOM */
+        }
+
+/* FOR THE LOGO IMAGE TEXT IN THE FOOTER IN THE HOME PAGE */
+#home-footer-logo figcaption
+        {
+            align-self: center;                 /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE CENTER VERTICALLY */
+            padding: 0 0 0 0.5vw;               /* <--- REMOVES PADDING, ADDING 0.5 VW PUSHING THE BORDER OF THE ELEMENT TO THE LEFT */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            word-spacing: 0.3vw;                /* <--- CHANGES THE SPACE BETWEEN EVERY WORD TO BE 0.3 VW */
+            font-size: 0.9vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.9 VW */
+        }
+
+/* FOR THE LOGO IMAGE IN THE FOOTER IN THE HOME PAGE */
+#home-footer-logo img
+        {
+            width: 5vw;                         /* <--- CHANGES THE WIDTH OF THE ELEMENT TO BE 5 VW */
+        }  
+        
+        
+
+/* FOR THE FOOTER CONTAINER AT THE BOTTOM OF THE WEBSITE */
+.footer
+        {
+            background-color: #353838;        /* <--- CHANGES THE BACKGROUND COLOR TO DARK GRAY */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */                                               
+            flex-direction: row;                /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE HORIZONTAL */
+            border-top: 1px solid #5E1914;    /* <--- ADDS A BORDER TO THE TOP WITH A RED COLOR */
+            margin-left: 15vw;                  /* <--- PUSHES THE ELEMENT 15 VW FROM THE LEFT */
+        }
+
+/* FOR THE LARGE HEADINGS IN THE FOOTER */
+.footer-h2
+        {
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 2vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 2 VH FROM THE TOP */
+            margin-bottom: 2vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 2 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF THE HEADING TO BE WHITE */
+            font-size: 1.6vw;                   /* <--- CHANGES THE FONT SIZE TO BE 1.6 VW */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE UNORDERED LISTS IN THE FOOTER */
+.footer ul
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                BETWEEN THE ELEMENTS */  
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+            justify-content: start;             /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE START HORIZONTALLY */
+            list-style-type: none;              /* <--- REMOVES THE BULLETS FROM THE LIST */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE UL BE CENTER HORIZONTALLY */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            width: 80vw;                        /* <--- CHANGES THE WIDTH TO BE 80 VW */
+        }
+
+/* FOR THE LINKS IN THE FOOTER */
+.footer a
+        {
+            text-decoration: none;              /* <--- REMOVES THE UNDERLINE */
+            width: 26.6vw;                      /* <--- CHANGES THE WIDTH TO 26.6 */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE LINKS BE CENTER HORIZONTALLY */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            text-align: center;                 /* <--- ALIGNS THE TEXT CENTER HORIZONTALLY */
+            line-height: 2vw;                   /* <--- ADDS SPACING BETWEEN LINE BREAKS BY 2 VW */
+        }
+
+/* FOR THE LINKS IN THE FOOTER WHEN HOVERED*/
+.footer a:hover
+        {
+            text-decoration: underline;         /* <--- DISPLAYS THE UNDERLINE */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF THE TEXT TO BE WHITE */
+        }
+
+/* FOR THE LIST ITEMS IN THE FOOTER */
+.footer li
+        {
+            font-family: pt_sansregular;        /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF THE TEXT TO BE WHITE */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE LIST ITEMS BE CENTER HORIZONTALLY */
+            font-size: 1vw;                     /* <--- CHANGES THE FONT SIZE TO BE 1 VW */
+        }
+
+/* FOR THE ADDRESS ELEMENT IN THE FOOTER */
+address
+        {
+            font-style: initial;                /* <--- REMOVES THE ITALIC STYLE */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+        }
+
+/* FOR THE SMALLER HEADINGS INSIDE THE ADDRESS LIST IN THE FOOTER */
+.contact-h3
+        {
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 1vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 1 VH FROM THE TOP */
+            margin-bottom: 1vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 1 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-size: 1.2vw;                   /* <--- CHANGES THE FONT SIZE TO BE 1.2 VW */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE TEXT INSIDE THE ADDRESS LIST IN THE FOOTER */
+.contact-text
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 1vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 1 VH FROM THE TOP */
+            margin-bottom: 3vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 3 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            pointer-events: auto;               /* <--- ADDS POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE TEXT INSIDE THE ADDRESS LIST IN THE FOOTER WHEN SELECTED */
+.contact-text ::selection
+        {
+            background-color: #2d88f8;       /* <--- CHANGES THE BACKGROUND COLOR OF TEXT TO BE BLUE WHEN SELECTED */
+        }
+
+/* FOR THE TEXT INSIDE THE TIME LIST IN THE FOOTER */
+.contact-hours
+        {
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            flex-direction: column;             /* <--- CHANGES THE DIRECTION OF THE FLEX TO BE VERTICAL */
+            margin: 0 auto;                     /* <--- REMOVES THE MARGIN, ADDS AUTO WHICH MAKES THE HEADING BE CENTER HORIZONTALLY */
+            margin-top: 1vh;                    /* <--- ADDS MARGIN TO THE TOP PUSHING THE ELEMENT 1 VH FROM THE TOP */
+            margin-bottom: 3vh;                 /* <--- ADDS MARGIN TO THE BOTTOM PUSHING THE ELEMENT 3 VH FROM THE BOTTOM */
+            padding: 0;                         /* <--- REMOVES THE PADDING */
+            font-family: oswaldregular;         /* <--- CHANGES THE FONT FAMILY */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            pointer-events: none;               /* <--- REMOVES ANY POINTER EVENTS WHEN HOVERED */
+        }
+
+/* FOR THE LOGO CONTAINER IN THE FOOTER */
+.footer-logo
+        {
+            background-color: #353838;        /* <--- CHANGES THE BACKGROUND COLOR TO BE DARK GRAY */
+            display: flex;                      /* <--- DISPLAYS THE ELEMENT IN FLEX (FLEX IS USED TO MAKE EVERY ELEMENT HAVE NO SPACE 
+                                                        BETWEEN THE ELEMENTS */
+            justify-content: center;            /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE CENTER HORIZONTALLY */
+            align-self: center;                 /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE CENTER VERTICALLY */
+            padding: 5vh 0 2vh 0;               /* <--- REMOVES LEFT AND RIGHT PADDING, ADDS 5 VH PUSHING THE BORDER OF THE ELEMENT 
+                                                        TO THE TOP, ADDS 2 VH PUSHING THE BORDER OF THE ELEMENT TO THE BOTTOM */
+            margin-left: 15vw;                  /* <--- PUSHES THE ELEMENT 15 VW FROM THE LEFT */
+        }
+
+/* FOR THE LOGO IMAGE TEXT IN THE FOOTER */
+.footer-logo figcaption
+        {
+            align-self: center;                 /* <--- MAKES THE ITEMS IN THE FLEX BE POSITIONED AT THE CENTER VERTICALLY */
+            padding: 0 0 0 0.5vw;               /* <--- REMOVES PADDING, ADDING 0.5 VW PUSHING THE BORDER OF THE ELEMENT TO THE LEFT */
+            color: #FFFFFF;                   /* <--- CHANGES THE COLOR OF TEXT TO BE WHITE */
+            word-spacing: 0.3vw;                /* <--- CHANGES THE SPACE BETWEEN EVERY WORD TO BE 0.3 VW */
+            font-size: 0.9vw;                   /* <--- CHANGES THE FONT SIZE TO BE 0.9 VW */
+        }
+
+/* FOR THE LOGO IMAGE IN THE FOOTER */
+.footer-logo img
+        {
+            width: 5vw;                         /* <--- CHANGES THE WIDTH OF THE ELEMENT TO BE 5 VW */
+        }

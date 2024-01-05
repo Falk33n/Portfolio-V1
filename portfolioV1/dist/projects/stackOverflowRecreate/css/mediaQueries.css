@@ -1,0 +1,248 @@
+@media all and (min-width:641px) {
+    .navBarLogo img {
+        display: none;
+    }
+
+    .navBarLogoBig img {
+        display: block;
+    }
+
+    .navBarProductsAbout,
+    .navBarProductsDrop,
+    .navBarProductsLabs {
+        left: 25%;
+    }
+
+    .navSearchSmall {
+        display: none;
+    }
+
+    .navSearchContainer {
+        display: block;
+    }
+
+    .navSearchBar {
+        margin-bottom: 0;
+        margin-top: 9px;
+        position: relative;
+    }
+
+    .navSearchBar:focus .navSearchSuggestionsBig,
+    .navSearchBar:focus-within .navSearchSuggestionsBig {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navSearchBar:focus .navSearchButtonsBig,
+    .navSearchBar:focus-within .navSearchButtonsBig {
+        display: flex;
+    }
+
+    .navBarProductsAbout,
+    .navBarProductsDrop,
+    .navBarProductsLabs {
+        transform: translateX(-35%);
+        left: 35%;
+    }
+
+    .mainBoxesDarkBlue {
+        background-color: #0C3B6A;
+        width: 65px;
+        height: 58px;
+        border-bottom-left-radius: 7.5px;
+        display: inline-block !important;
+        position: absolute;
+        left: 2%; 
+    }
+    
+    .mainBoxesBlue {
+        background-color: #1B75D0;
+        width: 65px;
+        height: 58px;
+        display: inline-block !important;
+        position: absolute;
+        right: clamp(30%, 10vw, 15%); 
+    }
+
+    .footerContainer {
+        padding-top: 8px!important;
+    }
+
+    .footerSocial {
+        margin-bottom: 0!important;
+    }
+    
+    .footerLogo {
+        display: block!important;
+    }
+}
+
+@media all and (min-width:718px) and (max-width:816px) {
+    .navSearchButtonsBig,
+    .navSearchSuggestionsBig {
+        left: 0;
+    }
+}
+
+@media all and (min-width:774px) and (max-width:816px) {
+    .footerLogo {
+        position: absolute;
+    }
+
+    .footerContainer h2, .footerContainer ul {
+        margin-left: 60px;
+    }
+
+    .footerRights, .footerSocial {
+        margin-left: 0!important;
+    }
+}
+
+@media all and (min-width:817px) {
+    .navBarLinks {
+        display: block;
+    }
+
+    .footerLogo {
+        position: absolute;
+        left: 0.5%;
+    }
+
+    .footerContainer {
+        flex-direction: row!important;
+        justify-content: space-around;
+        height: 350px;
+    }
+    
+    .footerContainer ul:nth-of-type(-n+4) {
+        flex-direction: column!important;
+        white-space: nowrap!important;
+    }
+
+    .footerContainer ul:nth-of-type(-n+1) li {
+        margin-left: 60px!important;
+    }
+
+    .footerContainer ul:nth-of-type(-n+4) li {
+        margin-right: 80px!important;
+    }
+
+    .footerContainer h2 {
+        display: none;
+    }
+
+    .footerHeadingBig {
+        display: list-item!important;
+        padding-bottom: 8px;
+        padding-top: 12px;
+    }
+
+    .footerDividerBig {
+        padding-top: 12px;
+    }
+
+    .footerSocial {
+        position: absolute;
+        bottom: 12%;
+        left: 2.5%;
+    }
+      
+    .footerRights {
+        position: absolute;
+        bottom: 0;
+        left: 2.5%;
+    }
+}
+
+@media all and (min-width:829px) {
+    .footerContainer {
+        justify-content: flex-start;
+        gap: 10px;
+        transition: gap 1s;
+    }
+
+    .footerContainer ul:nth-of-type(-n+4) li {
+        margin-right: 0!important;
+    }
+
+    .footerContainer ul:nth-of-type(-n+1) li {
+        margin-left: 40px!important;
+    }
+
+    .footerSocial {
+        top: 7.5%;
+        left: 67.5%;
+        white-space: nowrap!important;
+        gap: 10px!important;
+    }
+
+    .footerRights {
+        bottom: 0;
+        left: 67.5%;
+    }
+}
+
+@media all and (min-width:867px) and (max-width:1014px) {
+    .navSearchButtonsBig,
+    .navSearchSuggestionsBig {
+        left: 0;
+    }
+}
+
+@media all and (min-width:1015px) {
+    .navSearchSuggestionsBig {
+        width: 100%;
+    }
+
+    .navSearchButtonsBig {
+        width: calc(100% - 20px);
+    }
+}
+
+@media all and (min-width:1058px) {
+    .navSearchButtonsBig {
+        top: 538%;
+    }
+}
+
+@media all and (min-width:1124px) {
+    .navSearchButtonsBig {
+        top: 487%;
+    }
+}
+
+@media all and (min-width:1265px) {
+    .footerContainer, .navContainer {
+        width: 1265px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footerContainerBig {
+        width: 100%;
+        background-color: #0c0d0e;
+    }
+
+    .footerContainer {
+        gap: 65px;
+    }
+}
+
+@media all and (min-width:2000px) {
+    .mainContainer {
+        width: 2000px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media all and (min-height:761px) {
+    .navDrop {
+        overflow-y: hidden;
+        width: 239.5px;
+    }
+
+    .navDropHeadings .navDropLabs {
+        top: 25%;
+    }
+}
